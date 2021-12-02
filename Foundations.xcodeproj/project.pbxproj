@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D64F09C2759467900C1831A /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F09B2759467900C1831A /* GoalsView.swift */; };
+		2D64F09E27594D9500C1831A /* GoalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F09D27594D9500C1831A /* GoalField.swift */; };
 		D3B8DA91274A980300E5692E /* FoundationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B8DA90274A980300E5692E /* FoundationsApp.swift */; };
 		D3B8DA93274A980300E5692E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B8DA92274A980300E5692E /* ContentView.swift */; };
 		D3B8DA95274A980700E5692E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B8DA94274A980700E5692E /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D64F09B2759467900C1831A /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
+		2D64F09D27594D9500C1831A /* GoalField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalField.swift; sourceTree = "<group>"; };
 		D3B8DA8D274A980300E5692E /* Foundations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foundations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B8DA90274A980300E5692E /* FoundationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationsApp.swift; sourceTree = "<group>"; };
 		D3B8DA92274A980300E5692E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D64F09A2759459500C1831A /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				2D64F09B2759467900C1831A /* GoalsView.swift */,
+				2D64F09D27594D9500C1831A /* GoalField.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
 		D3B8DA84274A980300E5692E = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +68,7 @@
 		D3B8DA8F274A980300E5692E /* Foundations */ = {
 			isa = PBXGroup;
 			children = (
+				2D64F09A2759459500C1831A /* Goals */,
 				D3B8DA90274A980300E5692E /* FoundationsApp.swift */,
 				D3B8DA92274A980300E5692E /* ContentView.swift */,
 				D3B8DAA0274AA9ED00E5692E /* MacronutrientView.swift */,
@@ -144,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B8DAA1274AA9ED00E5692E /* MacronutrientView.swift in Sources */,
+				2D64F09C2759467900C1831A /* GoalsView.swift in Sources */,
 				D3B8DA93274A980300E5692E /* ContentView.swift in Sources */,
+				2D64F09E27594D9500C1831A /* GoalField.swift in Sources */,
 				D3B8DA9F274AA32900E5692E /* RectangularView.swift in Sources */,
 				D3B8DA91274A980300E5692E /* FoundationsApp.swift in Sources */,
 			);
