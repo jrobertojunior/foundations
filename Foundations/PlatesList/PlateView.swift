@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-struct MealView: View {
+struct PlateView: View {
     var food: String = "pao de batata"
+    
     var body: some View {
         Text(food).bold()
         Divider()
     }
 }
 
-struct MealView_Previews: PreviewProvider {
+struct PlateView_Previews: PreviewProvider {
     static var previews: some View {
-        MealView()
+        PlateView()
     }
 }
