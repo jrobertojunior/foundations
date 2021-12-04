@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D64F09C2759467900C1831A /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F09B2759467900C1831A /* GoalsView.swift */; };
 		2D64F09E27594D9500C1831A /* GoalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F09D27594D9500C1831A /* GoalField.swift */; };
-		2D64F0A3275990DA00C1831A /* MealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F0A2275990D900C1831A /* MealsListView.swift */; };
-		2D64F0A52759939B00C1831A /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F0A42759939B00C1831A /* MealView.swift */; };
+		2D64F0A3275990DA00C1831A /* PlatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F0A2275990D900C1831A /* PlatesListView.swift */; };
+		2D64F0A52759939B00C1831A /* PlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F0A42759939B00C1831A /* PlateView.swift */; };
+		2D64F0A8275AE42C00C1831A /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64F0A7275AE42C00C1831A /* MealsView.swift */; };
 		D3B8DA91274A980300E5692E /* FoundationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B8DA90274A980300E5692E /* FoundationsApp.swift */; };
 		D3B8DA93274A980300E5692E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B8DA92274A980300E5692E /* ContentView.swift */; };
 		D3B8DA95274A980700E5692E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B8DA94274A980700E5692E /* Assets.xcassets */; };
@@ -22,8 +23,9 @@
 /* Begin PBXFileReference section */
 		2D64F09B2759467900C1831A /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 		2D64F09D27594D9500C1831A /* GoalField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalField.swift; sourceTree = "<group>"; };
-		2D64F0A2275990D900C1831A /* MealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListView.swift; sourceTree = "<group>"; };
-		2D64F0A42759939B00C1831A /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
+		2D64F0A2275990D900C1831A /* PlatesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatesListView.swift; sourceTree = "<group>"; };
+		2D64F0A42759939B00C1831A /* PlateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateView.swift; sourceTree = "<group>"; };
+		2D64F0A7275AE42C00C1831A /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
 		D3B8DA8D274A980300E5692E /* Foundations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foundations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B8DA90274A980300E5692E /* FoundationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationsApp.swift; sourceTree = "<group>"; };
 		D3B8DA92274A980300E5692E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,13 +55,21 @@
 			path = Goals;
 			sourceTree = "<group>";
 		};
-		2D64F0A127598EF700C1831A /* MealsList */ = {
+		2D64F0A127598EF700C1831A /* PlatesList */ = {
 			isa = PBXGroup;
 			children = (
-				2D64F0A2275990D900C1831A /* MealsListView.swift */,
-				2D64F0A42759939B00C1831A /* MealView.swift */,
+				2D64F0A2275990D900C1831A /* PlatesListView.swift */,
+				2D64F0A42759939B00C1831A /* PlateView.swift */,
 			);
-			path = MealsList;
+			path = PlatesList;
+			sourceTree = "<group>";
+		};
+		2D64F0A6275AE3A400C1831A /* Meals */ = {
+			isa = PBXGroup;
+			children = (
+				2D64F0A7275AE42C00C1831A /* MealsView.swift */,
+			);
+			path = Meals;
 			sourceTree = "<group>";
 		};
 		D3B8DA84274A980300E5692E = {
@@ -81,7 +91,8 @@
 		D3B8DA8F274A980300E5692E /* Foundations */ = {
 			isa = PBXGroup;
 			children = (
-				2D64F0A127598EF700C1831A /* MealsList */,
+				2D64F0A6275AE3A400C1831A /* Meals */,
+				2D64F0A127598EF700C1831A /* PlatesList */,
 				2D64F09A2759459500C1831A /* Goals */,
 				D3B8DA90274A980300E5692E /* FoundationsApp.swift */,
 				D3B8DA92274A980300E5692E /* ContentView.swift */,
@@ -171,11 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D64F0A3275990DA00C1831A /* MealsListView.swift in Sources */,
+				2D64F0A3275990DA00C1831A /* PlatesListView.swift in Sources */,
 				D3B8DAA1274AA9ED00E5692E /* MacronutrientView.swift in Sources */,
 				2D64F09C2759467900C1831A /* GoalsView.swift in Sources */,
-				2D64F0A52759939B00C1831A /* MealView.swift in Sources */,
+				2D64F0A52759939B00C1831A /* PlateView.swift in Sources */,
 				D3B8DA93274A980300E5692E /* ContentView.swift in Sources */,
+				2D64F0A8275AE42C00C1831A /* MealsView.swift in Sources */,
 				2D64F09E27594D9500C1831A /* GoalField.swift in Sources */,
 				D3B8DA9F274AA32900E5692E /* RectangularView.swift in Sources */,
 				D3B8DA91274A980300E5692E /* FoundationsApp.swift in Sources */,

@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct MealsListView: View {
+struct PlatesListView: View {
     var body: some View {
         VStack{
-            MealsListHeaderView()
+            PlatesListHeaderView()
             
             ScrollView{
                 RoundedRectangle(cornerRadius: 20)
@@ -18,11 +18,11 @@ struct MealsListView: View {
                     .frame(height: 40)
                 
                 VStack(spacing: 10){
-                    MealView()
-                    MealView()
-                    MealView()
-                    MealView()
-                    MealView()
+                    PlateView()
+                    PlateView()
+                    PlateView()
+                    PlateView()
+                    PlateView()
                 }
             }
             .padding(.horizontal, 20)
@@ -30,7 +30,7 @@ struct MealsListView: View {
     }
 }
 
-struct MealsListHeaderView: View{
+struct PlatesListHeaderView: View{
     var body: some View{
         ZStack{
             Rectangle().fill(.gray)
@@ -71,8 +71,8 @@ struct MealsListHeaderView: View{
 
 
 
-struct MealsListView_Previews: PreviewProvider {
+struct PlatesListView_Previews: PreviewProvider {
     static var previews: some View {
-        MealsListView()
+        PlatesListView()
     }
 }
