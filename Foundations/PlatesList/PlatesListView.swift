@@ -52,15 +52,6 @@ struct PlatesListView: View {
 
 
 
-
-
-
-
-
-
-
-
-
 struct PlatesListView_Previews: PreviewProvider {
     static var previews: some View {
         PlatesListView()

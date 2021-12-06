@@ -9,43 +9,41 @@ import SwiftUI
 
 struct RegisterMealView: View {
     var body: some View {
-        VStack{
-            Rectangle().fill(.gray)
-            
-            Text("Cadastrar nova refeicao").bold().font(.largeTitle)
-            
-            ScrollView{
-                VStack(alignment: .leading){
-                    RoundedRectangle(cornerRadius: 20)
-                        .strokeBorder(lineWidth: 2)
-                        .frame(height: 40)
-                    
-                    Text("Ingrediente")
-                    
-                    IngredientView()
-                    IngredientView()
-                    IngredientView()
-                    IngredientView()
+        NavigationView {
+            VStack{                
+                ScrollView{
+                    VStack(alignment: .leading){
+                        RoundedRectangle(cornerRadius: 20)
+                            .strokeBorder(lineWidth: 2)
+                            .frame(height: 40)
+                        
+                        Text("Ingrediente")
+                        
+                        IngredientView()
+                        IngredientView()
+                        IngredientView()
+                        IngredientView()
+                    }
                 }
-            }
-            .padding(20)
-            
-            HStack{
-                Text("Nome")
+                .padding(20)
                 
-                Spacer()
+                HStack{
+                    Text("Nome")
+                    
+                    Spacer()
+                    
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20).fill(.gray)
+                        Text("Feijao e Arroz")
+                    }
+                }
                 
                 ZStack{
-                    RoundedRectangle(cornerRadius: 20).fill(.gray)
-                    Text("Feijao e Arroz")
+                    RoundedRectangle(cornerRadius: 20).fill(.blue)
+                    Text("Continuar").bold().foregroundColor(.white)
                 }
-            }
-            
-            ZStack{
-                RoundedRectangle(cornerRadius: 20).fill(.blue)
-                Text("Continuar").bold().foregroundColor(.white)
-            }
-            .padding(20)
+                .padding(20)
+            }.navigationTitle("Cadastrar refeição")
         }
     }
 }
@@ -60,40 +58,6 @@ struct IngredientView: View {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 struct RegisterMealView_Previews: PreviewProvider {

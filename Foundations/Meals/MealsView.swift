@@ -9,10 +9,8 @@ import SwiftUI
 
 struct MealsView: View {
     var body: some View {
-        VStack{
-            Rectangle().fill(.gray)
+        NavigationView {
             VStack{
-                Text("Cardapio").bold()
                 
                 VStack(alignment: .leading){
                     Text("Cafe da manha")
@@ -37,8 +35,8 @@ struct MealsView: View {
                             AddMealView().aspectRatio(2/3, contentMode: .fit)
                         }
                     }
-                
-                
+                    
+                    
                     Text("Jantar")
                     ScrollView(.horizontal){
                         HStack{
@@ -53,6 +51,7 @@ struct MealsView: View {
                 }
             }
             .padding(20)
+            .navigationTitle("Cardápio")
         }
     }
 }
@@ -86,38 +85,6 @@ struct AddMealView: View {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 struct MealsView_Previews: PreviewProvider {
     static var previews: some View {
