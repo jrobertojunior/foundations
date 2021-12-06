@@ -11,8 +11,17 @@ struct PlateView: View {
     var food: String = "pao de batata"
     
     var body: some View {
-        Text(food).bold()
-        Divider()
+        VStack{
+            HStack{
+                Circle()
+                    .strokeBorder(lineWidth: 2)
+                    .frame(width: 60)
+                Text(food).bold()
+                Spacer()
+            }
+            .padding(.trailing)
+            Divider()
+        }
     }
 }
 
