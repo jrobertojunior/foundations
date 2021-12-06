@@ -8,41 +8,44 @@
 import SwiftUI
 
 struct RegisterMealView: View {
+    @State var mealName: String = ""
+    
+    @State var searchIngredient: String = ""
+    @State var isSearching: Bool = false
+    
     var body: some View {
         NavigationView {
-            VStack{                
-                ScrollView{
-                    VStack(alignment: .leading){
-                        RoundedRectangle(cornerRadius: 20)
-                            .strokeBorder(lineWidth: 2)
-                            .frame(height: 40)
-                        
-                        Text("Ingrediente")
-                        
-                        IngredientView()
-                        IngredientView()
-                        IngredientView()
-                        IngredientView()
-                    }
+            VStack{
+                VStack{
+                    SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
+                    IngredientView()
+                    IngredientView()
+                    IngredientView()
+                    IngredientView()
+                    IngredientView()
                 }
-                .padding(20)
-                
+                Spacer()
                 HStack{
                     Text("Nome")
-                    
                     Spacer()
-                    
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 20).fill(.gray)
-                        Text("Feijao e Arroz")
-                    }
+                    TextField("Nome da refeicao", text: $mealName)
+                        .padding()
+                        .frame(width: 200, height: 60)
+                        .background(Color(.systemGray4))
+                        .cornerRadius(6)
                 }
+                .padding()
                 
-                ZStack{
-                    RoundedRectangle(cornerRadius: 20).fill(.blue)
-                    Text("Continuar").bold().foregroundColor(.white)
-                }
-                .padding(20)
+                Button(action: {
+                    
+                }, label: {
+                    Text("Continuar")
+                        .foregroundColor(.white)
+                        .bold()
+                        .padding()
+                        .background(Color(.systemBlue))
+                        .cornerRadius(10)
+                })
             }.navigationTitle("Cadastrar refeição")
         }
     }
@@ -52,8 +55,18 @@ struct IngredientView: View {
     var ingredient: String = "Arroz (100g)"
     
     var body: some View {
-        VStack{
-            Text(ingredient)
+        VStack(alignment: .leading){
+            HStack{
+                Text(ingredient)
+                Spacer()
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(Color(.red))
+                })
+            }
+            .padding()
             Divider()
         }
     }
@@ -63,5 +76,7 @@ struct IngredientView: View {
 struct RegisterMealView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterMealView()
+        RegisterMealView()
+            .preferredColorScheme(.dark)
     }
 }
