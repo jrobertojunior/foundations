@@ -15,20 +15,18 @@ struct GoalField: View {
         HStack{
             Text(textToDisplay).bold()
             Spacer()
-            ZStack{
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(.gray)
-                Text(goal)
-                    .frame(width: 100, height: 60)
-            }
+            Text(goal)
+                .frame(width: 100, height: 60)
+                .background(Color(.systemGray4))
+                .cornerRadius(6)
         }
-        .padding(.horizontal, 42)
-        .padding(.vertical, 16)
     }
 }
 
 struct GoalField_Previews: PreviewProvider {
     static var previews: some View {
         GoalField()
+        GoalField()
+            .preferredColorScheme(.dark)
     }
 }
