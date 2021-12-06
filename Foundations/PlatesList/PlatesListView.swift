@@ -15,7 +15,6 @@ struct PlatesListView: View {
     
     var body: some View {
         VStack{
-            PlatesListHeaderView()
             NavigationView{
                 ScrollView{
                     SearchBar(text: "Search plate...", searchText: $searchText, isSearching: $isSearching)
@@ -26,15 +25,6 @@ struct PlatesListView: View {
                 }
                 .navigationTitle("Refeições") 
             }
-        }
-    }
-}
-
-struct PlatesListHeaderView: View{
-    var body: some View{
-        ZStack{
-            Rectangle().fill(.gray)
-            Text("Atualizar Refeicao").bold().font(.largeTitle)
         }
     }
 }
