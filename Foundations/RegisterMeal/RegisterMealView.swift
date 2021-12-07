@@ -25,14 +25,17 @@ struct RegisterMealView: View {
                     IngredientView(ingredient: "Arroz (100g)")
                 }
                 Spacer()
-                HStack{
-                    Text("Nome")
-                    Spacer()
-                    TextField("Nome da refeicao", text: $mealName)
-                        .padding()
-                        .frame(width: 200, height: 60)
-                        .background(Color(.systemGray4))
-                        .cornerRadius(6)
+                VStack{
+                    HStack{
+                        TextField("Nome da refeicao", text: $mealName)
+                        Button(action: {
+                            mealName = ""
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(Color(.systemGray4))
+                        })
+                    }
+                    Divider()
                 }
                 .padding()
                 

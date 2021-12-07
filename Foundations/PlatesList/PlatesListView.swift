@@ -22,6 +22,7 @@ struct PlatesListView: View {
                     ForEach(plates.filter( {"\($0)".contains(searchText) || searchText.isEmpty}), id: \.self){ plate in
                         PlateView(food: plate)
                     }
+                    PlateView(food: "Criar refeicao +")
                 }
                 .navigationTitle("Refeições") 
             }
