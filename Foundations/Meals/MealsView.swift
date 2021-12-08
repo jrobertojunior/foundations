@@ -59,16 +59,20 @@ struct MealsView: View {
 
 struct MealCardView: View {
     var foodName: String = "Batata"
+    var foodImageName: String = "salada"
+    
     @State var isSelected: Bool = false
     
     var body: some View {
         ZStack{
-            let shape = RoundedRectangle(cornerRadius: 13)
+            let shape = Image(foodImageName)
+                .resizable(resizingMode: .stretch)
+                .cornerRadius(13)
             if isSelected{
-                shape.foregroundColor(.gray)
-                shape.strokeBorder(lineWidth: 3).foregroundColor(.green)
+                shape
+                    .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.green, lineWidth: 5))
             }else{
-                shape.foregroundColor(.gray)
+                shape
             }
         }
         .onTapGesture{
@@ -81,7 +85,7 @@ struct AddMealView: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 13).foregroundColor(.gray)
-            Text("+")
+            Image(systemName: "plus")
         }
     }
 }
