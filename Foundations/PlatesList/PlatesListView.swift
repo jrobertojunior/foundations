@@ -18,15 +18,32 @@ struct PlatesListView: View {
             NavigationView{
                 ScrollView{
                     SearchBar(text: "Search plate...", searchText: $searchText, isSearching: $isSearching)
-                     
-                    ForEach(plates.filter( {"\($0)".contains(searchText) || searchText.isEmpty}), id: \.self){ plate in
-                        PlateView(food: plate)
+                    VStack{
+                         
+                        ForEach(plates.filter( {"\($0)".contains(searchText) || searchText.isEmpty}), id: \.self){ plate in
+                            PlateView(food: plate)
+                        }
+                        
+                        CreateMealView()
                     }
-                    PlateView(food: "Criar refeicao +")
                 }
                 .navigationTitle("Refeições") 
             }
         }
+    }
+}
+
+struct CreateMealView: View {
+    var food: String = "salada"
+    var foodImageName: String = "salada"
+    
+    var body: some View {
+        HStack{
+            Image(systemName: "plus")
+            Text("Adicionar refeição").bold()
+        }
+        .padding()
+        .background(Color(.blue))
     }
 }
 

@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct PlateView: View {
-    var food: String = "pao de batata"
+    var food: String = "salada"
+    var foodImageName: String = "salada"
+    
     
     var body: some View {
         VStack{
             HStack{
-                Circle()
-                    .strokeBorder(lineWidth: 2)
-                    .frame(width: 60)
+                Image(foodImageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 90)
+                    .clipShape(Circle())
                 Text(food).bold()
                 Spacer()
             }
