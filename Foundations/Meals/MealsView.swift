@@ -52,6 +52,16 @@ struct MealsView: View {
             }
             .padding(20)
             .navigationTitle("Cardápio")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing){
+                    HStack{
+                        Image(systemName: "person.circle")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 70)
+                    }
+                }
+            }
         }
     }
 }
