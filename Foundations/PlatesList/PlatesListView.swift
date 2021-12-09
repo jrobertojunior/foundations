@@ -15,20 +15,20 @@ struct PlatesListView: View {
     
     var body: some View {
         VStack{
-            NavigationView{
-                ScrollView{
-                    SearchBar(text: "Search plate...", searchText: $searchText, isSearching: $isSearching)
-                    VStack{
-                         
-                        ForEach(plates.filter( {"\($0)".contains(searchText) || searchText.isEmpty}), id: \.self){ plate in
-                            PlateView(food: plate)
-                        }
-                        
+            
+            ScrollView{
+                SearchBar(text: "Search plate...", searchText: $searchText, isSearching: $isSearching)
+                VStack{
+                    
+                    ForEach(plates.filter( {"\($0)".contains(searchText) || searchText.isEmpty}), id: \.self){ plate in
+                        PlateView(food: plate)
+                    }
+                    NavigationLink(destination: RegisterMealView()) {
                         CreateMealView()
                     }
                 }
-                .navigationTitle("Refeições") 
             }
+            .navigationTitle("Refeições")
         }
     }
 }
@@ -43,32 +43,8 @@ struct CreateMealView: View {
             Text("Adicionar refeição").bold()
         }
         .padding()
-        .background(Color(.blue))
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 struct PlatesListView_Previews: PreviewProvider {
     static var previews: some View {

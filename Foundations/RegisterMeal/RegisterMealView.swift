@@ -14,43 +14,42 @@ struct RegisterMealView: View {
     @State var isSearching: Bool = false
     
     var body: some View {
-        NavigationView {
+        VStack{
             VStack{
-                VStack{
-                    SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
-                    IngredientView(ingredient: "Arroz (100g)")
-                    IngredientView(ingredient: "Arroz (100g)")
-                    IngredientView(ingredient: "Arroz (100g)")
-                    IngredientView(ingredient: "Arroz (100g)")
-                    IngredientView(ingredient: "Arroz (100g)")
+                SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
+                IngredientView(ingredient: "Arroz (100g)")
+                IngredientView(ingredient: "Arroz (100g)")
+                IngredientView(ingredient: "Arroz (100g)")
+                IngredientView(ingredient: "Arroz (100g)")
+                IngredientView(ingredient: "Arroz (100g)")
+            }
+            Spacer()
+            VStack{
+                HStack{
+                    TextField("Nome da refeicao", text: $mealName)
+                    Button(action: {
+                        mealName = ""
+                    }, label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(Color(.systemGray4))
+                    })
                 }
-                Spacer()
-                VStack{
-                    HStack{
-                        TextField("Nome da refeicao", text: $mealName)
-                        Button(action: {
-                            mealName = ""
-                        }, label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundColor(Color(.systemGray4))
-                        })
-                    }
-                    Divider()
-                }
-                .padding()
+                Divider()
+            }
+            .padding()
+            
+            Button(action: {
                 
-                Button(action: {
-                    
-                }, label: {
-                    Text("Continuar")
-                        .foregroundColor(.white)
-                        .bold()
-                        .padding()
-                        .background(Color(.systemBlue))
-                        .cornerRadius(10)
-                })
-            }.navigationTitle("Cadastrar refeição")
-        }
+            }, label: {
+                Text("Continuar")
+                    .foregroundColor(.white)
+                    .bold()
+                    .padding()
+                    .background(Color(.systemBlue))
+                    .cornerRadius(10)
+            })
+        }.navigationTitle("Cadastrar refeição")
+        
     }
 }
 

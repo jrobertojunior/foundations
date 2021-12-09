@@ -55,10 +55,12 @@ struct MealsView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing){
                     HStack{
-                        Image(systemName: "person.circle")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 70)
+                        NavigationLink(destination: GoalsView()) {
+                            Image(systemName: "person.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 70)
+                        }
                     }
                 }
             }
@@ -93,9 +95,11 @@ struct MealCardView: View {
 
 struct AddMealView: View {
     var body: some View {
-        ZStack{
-            RoundedRectangle(cornerRadius: 13).foregroundColor(.gray)
-            Image(systemName: "plus")
+        NavigationLink(destination: PlatesListView()) {
+            ZStack{
+                RoundedRectangle(cornerRadius: 13).foregroundColor(.gray)
+                Image(systemName: "plus")
+            }
         }
     }
 }

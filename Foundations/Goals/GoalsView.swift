@@ -25,52 +25,25 @@ struct GoalsView: View {
             .padding()
             
             Spacer()
-
+            
             Divider()
             Text("Seu IMC atual é de 24,2. A recomendação é que seu peso esteja entre 53kg e 72kg.")
             
             Button(action: {
                 
             }, label: {
-                Text("Salvar e Continuar")
-                    .foregroundColor(.white)
-                    .bold()
-                    .padding()
-                    .background(Color(.systemBlue))
-                    .cornerRadius(10)
+                NavigationLink(destination: MealsView()) {
+                    Text("Salvar e Continuar")
+                        .foregroundColor(.white)
+                        .bold()
+                        .padding()
+                        .background(Color(.systemBlue))
+                        .cornerRadius(10)
+                }
             })
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 struct GoalsView_Previews: PreviewProvider {

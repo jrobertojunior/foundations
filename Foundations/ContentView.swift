@@ -9,45 +9,44 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            ScrollView {
+        ScrollView {
+            VStack(alignment: .leading) {
+                
+                RectangularView()
+                
+                Divider()
+                    .padding(.horizontal, -16.0)
+                    .padding(.vertical)
+                
+                Text("Porção de 50g")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .padding(.vertical)
+                
+                VStack {
+                    MacronutrientView(attribute: "Proteínas", value: "11g")
+                    MacronutrientView(attribute: "Gorduras", value: "11g")
+                    MacronutrientView(attribute: "Carbohidratos", value: "15g")
+                    MacronutrientView(attribute: "Calorias", value: "300kcal")
+                }
+                
+                Divider()
+                    .padding(.horizontal, -16.0)
+                    .padding(.vertical)
+                
                 VStack(alignment: .leading) {
-                    
-                    RectangularView()
-                    
-                    Divider()
-                        .padding(.horizontal, -16.0)
-                        .padding(.vertical)
-                    
-                    Text("Porção de 50g")
+                    Text("Receita")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                        .padding(.vertical)
-                    
-                    VStack {
-                        MacronutrientView(attribute: "Proteínas", value: "11g")
-                        MacronutrientView(attribute: "Gorduras", value: "11g")
-                        MacronutrientView(attribute: "Carbohidratos", value: "15g")
-                        MacronutrientView(attribute: "Calorias", value: "300kcal")
-                    }
-                    
-                    Divider()
-                        .padding(.horizontal, -16.0)
-                        .padding(.vertical)
-                    
-                    VStack(alignment: .leading) {
-                        Text("Receita")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                        Text("  • Picote bem o alface;\n  • Adicione queijo;\n  • Adicione frango.")
-                    }
-                    
-                    Spacer()
+                    Text("  • Picote bem o alface;\n  • Adicione queijo;\n  • Adicione frango.")
                 }
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                .navigationTitle("Salada")
+                
+                Spacer()
             }
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .navigationTitle("Salada")
         }
+        
     }
 }
 
