@@ -13,7 +13,7 @@ struct GoalsView: View {
             Text("Perfil").bold().font(.largeTitle)
             VStack{
                 ZStack{
-                    Circle().fill(.gray).frame(width: 100, height: 100)
+                    Circle().fill(Color(.systemGray4)).frame(width: 100, height: 100)
                     Image(systemName: "camera")
                 }
                 
@@ -21,6 +21,7 @@ struct GoalsView: View {
                 GoalField(textToDisplay: "Peso", goal: "72kg")
                 GoalField(textToDisplay: "Idade", goal: "22 anos")
                 GoalField(textToDisplay: "Genero", goal: "Masculino")
+                GoalField(textToDisplay: "Objetivo", goal: "Emagrecimento")
             }
             .padding()
             
@@ -32,7 +33,7 @@ struct GoalsView: View {
             Button(action: {
                 
             }, label: {
-                NavigationLink(destination: MealsView()) {
+                NavigationLink(destination: MenuView()) {
                     Text("Salvar e Continuar")
                         .foregroundColor(.white)
                         .bold()

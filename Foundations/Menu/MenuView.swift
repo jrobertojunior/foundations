@@ -7,45 +7,45 @@
 
 import SwiftUI
 
-struct MealsView: View {
+struct MenuView: View {
     var body: some View {
         NavigationView {
             VStack{
                 
                 VStack(alignment: .leading){
                     Text("Cafe da manha")
-                    ScrollView(.horizontal){
+                    ScrollView(.horizontal, showsIndicators: false){
                         HStack{
                             MealCardView(isSelected: true)
                                 .aspectRatio(2/3, contentMode: .fit)
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            AddMealView().aspectRatio(2/3, contentMode: .fit)
+//                            AddMealView().aspectRatio(2/3, contentMode: .fit)
                         }
                     }
                     
                     Text("Almoco")
-                    ScrollView(.horizontal){
+                    ScrollView(.horizontal, showsIndicators: false){
                         HStack{
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
                             MealCardView(isSelected: true).aspectRatio(2/3, contentMode: .fit)
-                            AddMealView().aspectRatio(2/3, contentMode: .fit)
+//                            AddMealView().aspectRatio(2/3, contentMode: .fit)
                         }
                     }
                     
                     
                     Text("Jantar")
-                    ScrollView(.horizontal){
+                    ScrollView(.horizontal, showsIndicators: false){
                         HStack{
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
                             MealCardView(isSelected: true)
                                 .aspectRatio(2/3, contentMode: .fit)
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
                             MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            AddMealView().aspectRatio(2/3, contentMode: .fit)
+//                            AddMealView().aspectRatio(2/3, contentMode: .fit)
                         }
                     }
                 }
@@ -104,8 +104,8 @@ struct AddMealView: View {
     }
 }
 
-struct MealsView_Previews: PreviewProvider {
+struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MealsView()
+        MenuView()
     }
 }

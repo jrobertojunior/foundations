@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MealView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -57,9 +57,9 @@ extension UIApplication {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct MealView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MealView()
             .previewLayout(.device)
             .previewDevice("iPhone 13")
     }
