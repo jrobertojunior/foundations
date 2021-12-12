@@ -14,14 +14,12 @@ struct MenuView: View {
                 
                 VStack(alignment: .leading){
                     Text("Cafe da manha")
+                    let auxArr = [1, 2, 3, 4]
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
-                            MealCardView(isSelected: true)
-                                .aspectRatio(2/3, contentMode: .fit)
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-//                            AddMealView().aspectRatio(2/3, contentMode: .fit)
+                            ForEach (auxArr, id: \.self) { index in
+                                MealCardView().aspectRatio(2/3, contentMode: .fit)
+                            }
                         }
                     }
                     
@@ -74,21 +72,27 @@ struct MealCardView: View {
     var foodImageName: String = "salada"
     
     @State var isSelected: Bool = false
+    @State var isLongPressed: Bool = false
     
     var body: some View {
-        ZStack{
-            let shape = Image(foodImageName)
-                .resizable(resizingMode: .stretch)
-                .cornerRadius(13)
-            if isSelected{
-                shape
-                    .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.green, lineWidth: 5))
-            }else{
-                shape
+        NavigationLink(destination: MealView(), isActive: $isLongPressed) {
+            ZStack{
+                let shape = Image(foodImageName)
+                    .resizable(resizingMode: .stretch)
+                    .cornerRadius(13)
+                if isSelected{
+                    shape
+                        .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.green, lineWidth: 5))
+                }else{
+                    shape
+                }
             }
-        }
-        .onTapGesture{
-            isSelected = !isSelected
+            .onTapGesture{
+                isSelected = !isSelected
+            }
+            .onLongPressGesture(minimumDuration: 0.1) {
+                isLongPressed.toggle()
+            }
         }
     }
 }
