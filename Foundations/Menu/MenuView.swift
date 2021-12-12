@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct MenuView: View {
+    @ObservedObject var menuViewModel = MenuViewModel()
+    @State var selectedMealId = -1
+    
     var body: some View {
         NavigationView {
             VStack{
                 
                 VStack(alignment: .leading){
                     Text("Cafe da manha")
-                    let auxArr = [1, 2, 3, 4]
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
-                            ForEach (auxArr, id: \.self) { index in
-                                MealCardView().aspectRatio(2/3, contentMode: .fit)
+                            ForEach (menuViewModel.mealsBreakfast) { breakfast in
+                                NavigationLink(destination: MealView(), isActive: .constant(selectedMealId == breakfast.id)) {
+                                    MealCardView(meal: breakfast)
+                                        .aspectRatio(2/3, contentMode: .fit)
+                                        .onTapGesture {
+                                            menuViewModel.chooseBreakFast(breakfast)
+                                        }
+                                        .onLongPressGesture {
+                                            selectedMealId = breakfast.id
+                                        }
+                                }
                             }
                         }
                     }
@@ -26,11 +37,18 @@ struct MenuView: View {
                     Text("Almoco")
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            MealCardView(isSelected: true).aspectRatio(2/3, contentMode: .fit)
-//                            AddMealView().aspectRatio(2/3, contentMode: .fit)
+                            ForEach (menuViewModel.mealsLunch) { lunch in
+                                NavigationLink(destination: MealView(), isActive: .constant(selectedMealId == lunch.id)) {
+                                    MealCardView(meal: lunch)
+                                        .aspectRatio(2/3, contentMode: .fit)
+                                        .onTapGesture {
+                                            menuViewModel.chooseLunch(lunch)
+                                        }
+                                        .onLongPressGesture {
+                                            selectedMealId = lunch.id
+                                        }
+                                }
+                            }
                         }
                     }
                     
@@ -38,14 +56,22 @@ struct MenuView: View {
                     Text("Jantar")
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            MealCardView(isSelected: true)
-                                .aspectRatio(2/3, contentMode: .fit)
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-                            MealCardView().aspectRatio(2/3, contentMode: .fit)
-//                            AddMealView().aspectRatio(2/3, contentMode: .fit)
+                            ForEach (menuViewModel.mealsDinner) { dinner in
+                                NavigationLink(destination: MealView(), isActive: .constant(selectedMealId == dinner.id)) {
+                                    MealCardView(meal: dinner)
+                                        .aspectRatio(2/3, contentMode: .fit)
+                                        .onTapGesture {
+                                            menuViewModel.chooseDinner(dinner)
+                                        }
+                                        .onLongPressGesture {
+                                            selectedMealId = dinner.id
+                                        }
+                                }
+                            }
                         }
                     }
+                }.onAppear {
+                    selectedMealId = -1
                 }
             }
             .padding(20)
@@ -68,30 +94,18 @@ struct MenuView: View {
 
 
 struct MealCardView: View {
-    var foodName: String = "Batata"
-    var foodImageName: String = "salada"
-    
-    @State var isSelected: Bool = false
-    @State var isLongPressed: Bool = false
+    let meal: MenuModel.Meal
     
     var body: some View {
-        NavigationLink(destination: MealView(), isActive: $isLongPressed) {
-            ZStack{
-                let shape = Image(foodImageName)
-                    .resizable(resizingMode: .stretch)
-                    .cornerRadius(13)
-                if isSelected{
-                    shape
-                        .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.green, lineWidth: 5))
-                }else{
-                    shape
-                }
-            }
-            .onTapGesture{
-                isSelected = !isSelected
-            }
-            .onLongPressGesture(minimumDuration: 0.1) {
-                isLongPressed.toggle()
+        ZStack{
+            let shape = Image(meal.name)
+                .resizable(resizingMode: .stretch)
+                .cornerRadius(13)
+            if meal.isSelected {
+                shape
+                    .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.green, lineWidth: 5))
+            }else{
+                shape
             }
         }
     }
