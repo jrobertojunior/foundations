@@ -59,15 +59,15 @@ struct MenuModel {
         let data = DataLoader()
         print(data.mealsData)
         
-        mealsBreakfast = Array<Meal>()
-        mealsLunch = Array<Meal>()
-        mealsDinner = Array<Meal>()
+        mealsBreakfast = data.mealsData
+        mealsLunch = data.mealsData
+        mealsDinner = data.mealsData
         
         //Change to work with random meals / ID -> index*3+0/1/2
-        for index in 0..<4{
-            let auxMeal = Meal(id: index*3)
-            let auxMeal2 = Meal(id: index*3+1)
-            let auxMeal3 = Meal(id: index*3+2)
+        for _ in 0..<4{
+            let auxMeal = mealsBreakfast[0]
+            let auxMeal2 = mealsBreakfast[1]
+            let auxMeal3 = mealsBreakfast[2]
             mealsBreakfast.append(auxMeal)
             mealsLunch.append(auxMeal2)
             mealsDinner.append(auxMeal3)

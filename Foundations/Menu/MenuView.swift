@@ -98,7 +98,7 @@ struct MealCardView: View {
     
     var body: some View {
         ZStack{
-            let shape = Image(meal.name)
+            let shape = Image(meal.imageName)
                 .resizable(resizingMode: .stretch)
                 .cornerRadius(13)
             if meal.isSelected {
