@@ -15,7 +15,7 @@ struct Meal: Identifiable {
     }
     
     var isSelected: Bool = false
-    var id: String
+    var id: Int
     
     var ingredients: [IngredientsAmount] = Array<IngredientsAmount>()
     
