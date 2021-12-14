@@ -94,7 +94,7 @@ struct MenuView: View {
 
 
 struct MealCardView: View {
-    let meal: MenuModel.Meal
+    let meal: Meal
     
     var body: some View {
         ZStack{
