@@ -79,7 +79,7 @@ struct MenuView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing){
                     HStack{
-                        NavigationLink(destination: GoalsView()) {
+                        NavigationLink(destination: GoalView()) {
                             Image(systemName: "person.circle")
                                 .resizable()
                                 .scaledToFit()
