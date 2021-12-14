@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Meal: Identifiable {
+struct Meal: Identifiable, Decodable {
     struct IngredientsAmount: Decodable {
         var name: String
-        var amount: Int
+        var amount: Float
         var unit: String
     }
     

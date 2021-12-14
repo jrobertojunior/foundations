@@ -22,9 +22,9 @@ public class DataLoader {
             do {
                 let data = try Data(contentsOf: fileLocation)
                 let jsonDecoder = JSONDecoder()
-                //let dataFromJson = try jsonDecoder.decode([mealsData].self, from: data)
+                let dataFromJson = try jsonDecoder.decode([Meal].self, from: data)
                 
-                //self.mealsData = dataFromJson
+                self.mealsData = dataFromJson
             } catch {
                 print(error)
             }

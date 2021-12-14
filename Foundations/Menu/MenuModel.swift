@@ -56,6 +56,9 @@ struct MenuModel {
     }
 
     init () {
+        let data = DataLoader()
+        print(data.mealsData)
+        
         mealsBreakfast = Array<Meal>()
         mealsLunch = Array<Meal>()
         mealsDinner = Array<Meal>()
