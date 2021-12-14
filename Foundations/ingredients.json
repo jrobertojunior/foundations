@@ -1,0 +1,612 @@
+[
+  {
+    "id": "a5e2abd8-c908-42c6-833c-94ab7daf2321",
+    "name": "Egg",
+    "carb": 0.34,
+    "prot": 5.54,
+    "fats": 4.37,
+    "cals": 65.0,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "04988d05-e052-40df-b2de-066bfbd5d4db",
+    "name": "White bread",
+    "carb": 12.65,
+    "prot": 1.91,
+    "fats": 0.82,
+    "cals": 66.0,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "79c0df85-1388-44ca-b127-94e9e2efe02f",
+    "name": "Ham",
+    "carb": 0.0,
+    "prot": 2.65,
+    "fats": 1.35,
+    "cals": 26.5,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "e36110e3-ad43-4e83-8727-c69669ff1aa7",
+    "name": "Cream cheese",
+    "carb": 0.37,
+    "prot": 0.48,
+    "fats": 2.05,
+    "cals": 21.87,
+    "amount": 5.0,
+    "unit": "ml"
+  },
+  {
+    "id": "af44a2d9-338f-4968-86ae-02f1e4b50bee",
+    "name": "Milk",
+    "carb": 10.0,
+    "prot": 5.8,
+    "fats": 6.0,
+    "cals": 117.0,
+    "amount": 200.0,
+    "unit": "ml"
+  },
+  {
+    "id": "5aa805ae-f2c2-4371-bed4-b88019017d9c",
+    "name": "Cooking oil",
+    "carb": 0.0,
+    "prot": 0.0,
+    "fats": 12.0,
+    "cals": 108.0,
+    "amount": 13.0,
+    "unit": "ml"
+  },
+  {
+    "id": "7e7f41e7-2c6a-4c29-a4db-1bf5afccdc77",
+    "name": "Polvilho",
+    "carb": 90.0,
+    "prot": 0.0,
+    "fats": 0.0,
+    "cals": 0.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "a6ee6822-2224-47d5-89fb-5c5088c85b56",
+    "name": "Parmesan cheese",
+    "carb": 3.23,
+    "prot": 36.6,
+    "fats": 26.6,
+    "cals": 386.66,
+    "amount": 100,
+    "unit": "grams"
+  },
+  {
+    "id": "c4e9ae49-8aa8-44ab-b161-db8cf37980cc",
+    "name": "Grated parmesan cheese",
+    "carb": 0.0,
+    "prot": 7.0,
+    "fats": 5.0,
+    "cals": 83.0,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "849c2cb3-cb3d-4e71-8d05-2e8c74b75df4",
+    "name": "Butter",
+    "carb": 0.01,
+    "prot": 0.12,
+    "fats": 11.52,
+    "cals": 101.81,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "6adaa512-ae35-44e9-8f4f-bb29d9c139a1",
+    "name": "Mushroom",
+    "carb": 3.09,
+    "prot": 2.17,
+    "fats": 0.47,
+    "cals": 28.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "b375c678-009c-4ac7-a314-4a3a99c31cc7",
+    "name": "Strawberry",
+    "carb": 6.8,
+    "prot": 0.9,
+    "fats": 0.3,
+    "cals": 30.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "2e09860d-150d-41b0-b5c3-f5485f29a74d",
+    "name": "Jabuticaba",
+    "carb": 0.65,
+    "prot": 0.03,
+    "fats": 0.01,
+    "cals": 2.9,
+    "amount": 5.0,
+    "unit": "unit"
+  },
+  {
+    "id": "6577e574-9394-452b-a060-e609156aac61",
+    "name": "Banana",
+    "carb": 23.8,
+    "prot": 1.3,
+    "fats": 0.3,
+    "cals": 99.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "be8012fa-4304-4194-b9ac-4cdbf578a3ba",
+    "name": "Peanut butter",
+    "carb": 2.36,
+    "prot": 2.66,
+    "fats": 2.66,
+    "cals": 48.4,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "621da6b9-22d3-4f43-aa8a-fb6caa54e2fb",
+    "name": "Honey",
+    "carb": 12.3,
+    "prot": 0.0,
+    "fats": 0.0,
+    "cals": 46.35,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "c6bfee79-fbbd-4c47-8702-b7746cf7c05d",
+    "name": "Olive oil",
+    "carb": 0.0,
+    "prot": 0.0,
+    "fats": 8.0,
+    "cals": 70.72,
+    "amount": 15,
+    "unit": "ml"
+  },
+  {
+    "id": "e48baaa9-4081-439f-b69b-c3ae3819f5a5",
+    "name": "Shoyu",
+    "carb": 1.77,
+    "prot": 0.38,
+    "fats": 0.0,
+    "cals": 8.55,
+    "amount": 15,
+    "unit": "ml"
+  },
+  {
+    "id": "65a2edb9-df20-4dbd-8d88-c38d5528a857",
+    "name": "Fresh milk cream",
+    "carb": 0.0,
+    "prot": 0.4,
+    "fats": 3.53,
+    "cals": 33.33,
+    "amount": 15,
+    "unit": "ml"
+  },
+  {
+    "id": "a4b49fd4-ae3b-4802-8853-b6865f0d9340",
+    "name": "Cottage cheese",
+    "carb": 1.6,
+    "prot": 6.0,
+    "fats": 2.15,
+    "cals": 49.0,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "dd49221a-20e5-416e-a829-3a21d9ab0b73",
+    "name": "flour",
+    "carb": 14.56,
+    "prot": 1.96,
+    "fats": 0.28,
+    "cals": 72.0,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "eff00451-a6b6-4b68-a500-d04c6180ce74",
+    "name": "Tapioca",
+    "carb": 22.0,
+    "prot": 2.0,
+    "fats": 3.9,
+    "cals": 130.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "edcefa93-e1b0-4091-8d3d-af9d6c63b759",
+    "name": "Chia seed",
+    "carb": 2.05,
+    "prot": 2.15,
+    "fats": 4.1,
+    "cals": 67.0,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "869db1a6-ef26-4c26-b627-bb2c90474c28",
+    "name": "Papaya",
+    "carb": 32.24,
+    "prot": 1.55,
+    "fats": 0.31,
+    "cals": 124.0,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "d065bd81-5568-44af-bde3-55132c052623",
+    "name": "Sugar",
+    "carb": 23.88,
+    "prot": 0.0,
+    "fats": 0.0,
+    "cals": 95.52,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "b6a5ad51-e256-4a57-8629-d9d0c0d8ce10",
+    "name": "Tuna",
+    "carb": 0.0,
+    "prot": 29.0,
+    "fats": 0.6,
+    "cals": 130.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "1a78abbb-eb75-4085-9c11-d495f03f307a",
+    "name": "Salmon",
+    "carb": 0.49,
+    "prot": 23.97,
+    "fats": 7.56,
+    "cals": 171.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "55fcae8e-58f8-4347-a735-ce12411fc10f",
+    "name": "Zucchini",
+    "carb": 3.1,
+    "prot": 1.2,
+    "fats": 0.3,
+    "cals": 17.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "9a40a110-ec15-49ef-bd26-cc7c9f4634a8",
+    "name": "Pork",
+    "carb": 0.0,
+    "prot": 23.0,
+    "fats": 8.7,
+    "cals": 170.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "94f6719c-7d6a-46d0-8350-1fd9fcd19586",
+    "name": "Lemon",
+    "carb": 1.92,
+    "prot": 0.11,
+    "fats": 0.0,
+    "cals": 5.18,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "151acd7f-f033-441b-ab15-ff1197fb825a",
+    "name": "Parsley",
+    "carb": 0.32,
+    "prot": 0.15,
+    "fats": 0.04,
+    "cals": 1.8,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "7518450c-9b0b-436b-b13b-2b9622137104",
+    "name": "Onion",
+    "carb": 6.23,
+    "prot": 1.19,
+    "fats": 0.07,
+    "cals": 27.3,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "f4c12f5a-78a6-4b19-bf59-e093263094f6",
+    "name": "Garlic",
+    "carb": 0.98,
+    "prot": 0.35,
+    "fats": 0.01,
+    "cals": 5.65,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "876dec1d-331a-4b19-aabd-31a4ad129adf",
+    "name": "Olive",
+    "carb": 0.01,
+    "prot": 0.04,
+    "fats": 0.57,
+    "cals": 5.48,
+    "amount": 4.0,
+    "unit": "unit"
+  },
+  {
+    "id": "34a84396-0a1a-4a2c-84e2-e47a9e15e04a",
+    "name": "Chicken breast",
+    "carb": 0.0,
+    "prot": 31.0,
+    "fats": 3.6,
+    "cals": 165.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "2acc16fc-c273-409f-a663-afdca90d134f",
+    "name": "Bell pepper (Green)",
+    "carb": 1.27,
+    "prot": 0.61,
+    "fats": 0.11,
+    "cals": 11.55,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "5c2aa202-cce0-4da5-8e38-74c5e00bd365",
+    "name": "Cauliflower",
+    "carb": 1.13,
+    "prot": 0.48,
+    "fats": 0.05,
+    "cals": 5.75,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "b86d80cc-5183-450f-a2c2-fd39c4137a63",
+    "name": "Carrot",
+    "carb": 9.58,
+    "prot": 0.93,
+    "fats": 0.24,
+    "cals": 41.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "847023e0-ff8f-4c2a-a872-8f3c965f7155",
+    "name": "Broccoli",
+    "carb": 4.0,
+    "prot": 3.6,
+    "fats": 0.3,
+    "cals": 25.5,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "05c6d93b-2711-4220-a328-3a0de346339b",
+    "name": "Tomato",
+    "carb": 2.41,
+    "prot": 0.55,
+    "fats": 0.12,
+    "cals": 11.0,
+    "amount": 62.0,
+    "unit": "grams"
+  },
+  {
+    "id": "eb638d52-9195-4be1-90b8-a529ebd62c35",
+    "name": "Cucumber",
+    "carb": 3.6,
+    "prot": 0.7,
+    "fats": 0.1,
+    "cals": 16.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "cbd07b62-01aa-4430-91ce-f27a48fd1c06",
+    "name": "Lettuce",
+    "carb": 2.9,
+    "prot": 1.4,
+    "fats": 0.2,
+    "cals": 15.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "4283fd3f-ab17-4652-9dae-b372f151045f",
+    "name": "Radish",
+    "carb": 3.4,
+    "prot": 0.7,
+    "fats": 0.1,
+    "cals": 16.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "9eef55fd-628f-4f12-b745-c0b76df5c5ae",
+    "name": "Potato",
+    "carb": 7.2,
+    "prot": 0,
+    "fats": 0,
+    "cals": 30.0,
+    "amount": 30.0,
+    "unit": "grams"
+  },
+  {
+    "id": "7534db90-fcc3-47c3-8b67-c95f6bb2feba",
+    "name": "Sweet potato",
+    "carb": 20.0,
+    "prot": 1.6,
+    "fats": 0.1,
+    "cals": 86.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "84d08ef6-79cf-42a1-b9fa-92fd000249e2",
+    "name": "Soy",
+    "carb": 7.0,
+    "prot": 81.0,
+    "fats": 3.4,
+    "cals": 338.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "1d775195-8c29-4b3b-b712-c2dde36a020b",
+    "name": "Mozzarella cheese",
+    "carb": 3.83,
+    "prot": 25.96,
+    "fats": 20.03,
+    "cals": 302.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "9481cc33-066f-49e4-8133-fa0ee99ab43d",
+    "name": "Spinach",
+    "carb": 3.63,
+    "prot": 2.86,
+    "fats": 0.39,
+    "cals": 23.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "64dfb75c-65c4-4ed5-8b55-707037f0b7d0",
+    "name": "Spaghetti",
+    "carb": 31.0,
+    "prot": 6.0,
+    "fats": 0.9,
+    "cals": 158.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "0950e8aa-f26a-4a68-9a2f-7a2d2ef9faf6",
+    "name": "Eggplant",
+    "carb": 3.75,
+    "prot": 3.0,
+    "fats": 0.25,
+    "cals": 50.0,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "c1dad237-f2c9-4d4b-b960-f391d42258ee",
+    "name": "Sesame",
+    "carb": 0.97,
+    "prot": 2.12,
+    "fats": 5.04,
+    "cals": 58.4,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "e731c9d0-86dd-4116-a6bf-792ac559534e",
+    "name": "Whole wheat bread",
+    "carb": 9.25,
+    "prot": 2.6,
+    "fats": 0.45,
+    "cals": 62.5,
+    "amount": 1.0,
+    "unit": "unit"
+  },
+  {
+    "id": "6c0ce127-3063-4f78-a4e7-192907f51943",
+    "name": "Cherry tomato",
+    "carb": 3.92,
+    "prot": 0.88,
+    "fats": 0.2,
+    "cals": 18.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "bd24b6b4-e84c-4af1-bfc9-c2c448a6ef9d",
+    "name": "Pumpkin",
+    "carb": 7.0,
+    "prot": 1.0,
+    "fats": 0.1,
+    "cals": 26.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "a92209fa-fa4a-444f-947b-b4daaae04b1a",
+    "name": "Rice",
+    "carb": 10.81,
+    "prot": 1.01,
+    "fats": 0.04,
+    "cals": 50.12,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "e85b7606-4d8b-41dd-9668-9d9a3067df0e",
+    "name": "Black beans",
+    "carb": 0.95,
+    "prot": 0.77,
+    "fats": 0.09,
+    "cals": 13.09,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "69d8f823-76db-4c7c-a789-6ab3f0064351",
+    "name": "chickpea",
+    "carb": 61.0,
+    "prot": 19.0,
+    "fats": 6.0,
+    "cals": 364.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "58a853e2-1636-4f4b-bf26-882c7b1e6b3b",
+    "name": "Oat",
+    "carb": 9.15,
+    "prot": 3.11,
+    "fats": 1.27,
+    "cals": 44.28,
+    "amount": 15.0,
+    "unit": "ml"
+  },
+  {
+    "id": "25b23419-67a4-44e2-8422-0b2ea399451f",
+    "name": "Rump",
+    "carb": 0.9,
+    "prot": 27.0,
+    "fats": 11.0,
+    "cals": 213.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "4404b244-cacb-4530-aef5-df4273568677",
+    "name": "Bacon",
+    "carb": 1.4,
+    "prot": 37.0,
+    "fats": 42.0,
+    "cals": 541.0,
+    "amount": 100.0,
+    "unit": "grams"
+  },
+  {
+    "id": "10bdb348-a734-44a5-91c2-baa03e85d4e2",
+    "name": "Asparagus",
+    "carb": 3.9,
+    "prot": 2.2,
+    "fats": 0.1,
+    "cals": 20.0,
+    "amount": 100.0,
+    "unit": "grams"
+  }
+]
