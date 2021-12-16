@@ -20,7 +20,7 @@ struct MenuView: View {
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
                             ForEach (menuViewModel.mealsBreakfast) { breakfast in
-                                NavigationLink(destination: MealView(), isActive: .constant(selectedMealId == breakfast.id)) {
+                                NavigationLink(destination: MealView(meal: breakfast), isActive: .constant(selectedMealId == breakfast.id)) {
                                     MealCardView(meal: breakfast)
                                         .aspectRatio(2/3, contentMode: .fit)
                                         .onTapGesture {
@@ -38,7 +38,7 @@ struct MenuView: View {
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
                             ForEach (menuViewModel.mealsLunch) { lunch in
-                                NavigationLink(destination: MealView(), isActive: .constant(selectedMealId == lunch.id)) {
+                                NavigationLink(destination: MealView(meal: lunch), isActive: .constant(selectedMealId == lunch.id)) {
                                     MealCardView(meal: lunch)
                                         .aspectRatio(2/3, contentMode: .fit)
                                         .onTapGesture {
@@ -57,7 +57,7 @@ struct MenuView: View {
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
                             ForEach (menuViewModel.mealsDinner) { dinner in
-                                NavigationLink(destination: MealView(), isActive: .constant(selectedMealId == dinner.id)) {
+                                NavigationLink(destination: MealView(meal: dinner), isActive: .constant(selectedMealId == dinner.id)) {
                                     MealCardView(meal: dinner)
                                         .aspectRatio(2/3, contentMode: .fit)
                                         .onTapGesture {

@@ -8,26 +8,31 @@
 import Foundation
 
 struct Meal: Identifiable, Decodable {
-    struct IngredientsAmount: Decodable {
+    struct IngredientsAmount: Decodable, Hashable {
         var name: String
         var amount: Float
         var unit: String
+        
+        func hash(into hasher: inout Hasher) {
+            hasher.combine(name)
+            hasher.combine(amount)
+        }
     }
     
-    var isSelected: Bool
+    var isSelected: Bool = false
     var id: Int
     
-    var ingredients: [IngredientsAmount]
+    var ingredients: [IngredientsAmount] = Array<IngredientsAmount>()
     
-    var prots: Float
-    var carbs: Float
-    var fats: Float
-    var cals: Float
+    var prots: Float = 1
+    var carbs: Float = 1
+    var fats: Float = 2
+    var cals: Float = 3
     
-    var name: String
-    var imageName: String
-    var recipeLink: String
-    var time: Int
+    var name: String = "salada"
+    var imageName: String = "salada"
+    var recipeLink: String = "salada"
+    var time: Int = 0
 }
 
 
