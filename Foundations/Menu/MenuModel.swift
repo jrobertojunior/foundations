@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 struct MenuModel {
     private(set) var mealsBreakfast: Array<Meal>
     private(set) var mealsLunch: Array<Meal>
@@ -126,6 +125,7 @@ struct MenuModel {
     
     init () {
         let data = DataLoader()
+        data.loadMeals()
         mealsBreakfast = Array<Meal>()
         mealsLunch = Array<Meal>()
         mealsDinner = Array<Meal>()

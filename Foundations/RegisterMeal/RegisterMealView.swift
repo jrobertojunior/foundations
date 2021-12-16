@@ -17,11 +17,11 @@ struct RegisterMealView: View {
         VStack{
             VStack{
                 SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
-                IngredientView(ingredient: "Arroz (100g)")
-                IngredientView(ingredient: "Arroz (100g)")
-                IngredientView(ingredient: "Arroz (100g)")
-                IngredientView(ingredient: "Arroz (100g)")
-                IngredientView(ingredient: "Arroz (100g)")
+                IngredientListItemView(ingredient: "Arroz (100g)")
+                IngredientListItemView(ingredient: "Arroz (100g)")
+                IngredientListItemView(ingredient: "Arroz (100g)")
+                IngredientListItemView(ingredient: "Arroz (100g)")
+                IngredientListItemView(ingredient: "Arroz (100g)")
             }
             Spacer()
             VStack{

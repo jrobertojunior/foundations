@@ -36,17 +36,14 @@ struct Meal: Identifiable, Decodable {
 }
 
 
-struct Ingredient: Identifiable {
-    var isSelected = false
+struct Ingredient: Identifiable, Decodable {
     let id: Int
     
-    let name = "salada"
-    let carb = 100.0
-    let prot = 17.0
-    let fats = 31.0
-    let cals = 486.0
-    let amount = 100.0
-    let unit = "grams"
-    
-    
+    var name: String = "Not found"
+    var carb: Float = 0
+    var prot: Float = 0
+    var fats: Float = 0
+    var cals: Float = 0
+    var amount: Float = 0
+    var unit: String = "grams"
 }

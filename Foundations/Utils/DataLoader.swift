@@ -10,10 +10,7 @@ import Foundation
 public class DataLoader {
     
     @Published var mealsData = [Meal]()
-    
-    init () {
-        loadMeals()
-    }
+    @Published var ingredientsData = [Ingredient]()
     
     func loadMeals() {
         
@@ -25,6 +22,22 @@ public class DataLoader {
                 let dataFromJson = try jsonDecoder.decode([Meal].self, from: data)
                 
                 self.mealsData = dataFromJson
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    func loadIngredients() {
+        
+        if let fileLocation = Bundle.main.url(forResource: "ingredients", withExtension: "json") {
+            
+            do {
+                let data = try Data(contentsOf: fileLocation)
+                let jsonDecoder = JSONDecoder()
+                let dataFromJson = try jsonDecoder.decode([Ingredient].self, from: data)
+                
+                self.ingredientsData = dataFromJson
             } catch {
                 print(error)
             }

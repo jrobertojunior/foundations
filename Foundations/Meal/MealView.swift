@@ -9,6 +9,12 @@ import SwiftUI
 
 struct MealView: View {
     let meal: Meal
+    @ObservedObject var mealViewModel: MealViewModel
+    
+    init(meal selectedMeal: Meal) {
+        meal = selectedMeal
+        mealViewModel = MealViewModel(selectedMeal: meal)
+    }
     
     var body: some View {
         ScrollView {
@@ -18,11 +24,6 @@ struct MealView: View {
                 
                 Divider()
                     .padding(.horizontal, -16.0)
-                    .padding(.vertical)
-                
-                Text("Porção de 50g")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
                     .padding(.vertical)
                 
                 VStack {
@@ -44,11 +45,13 @@ struct MealView: View {
                     
                     ForEach (meal.ingredients, id: \.self) { ingredient in
                         HStack {
-                            Text("  • " + ingredient.name)
-                                .font(.title3)
-                            Spacer()
-                            Text(String(ingredient.amount) + " " + ingredient.unit)
-                                .font(.title3)
+                            NavigationLink(destination: IngredientView(ingredient: mealViewModel.getIngredient(ingredient.name))) {
+                                Text("  • " + ingredient.name)
+                                    .font(.title3)
+                                Spacer()
+                                Text(String(ingredient.amount) + " " + ingredient.unit)
+                                    .font(.title3)
+                            }.buttonStyle(PlainButtonStyle()) 
                         }
                     }
                 }
@@ -60,7 +63,6 @@ struct MealView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
-                    //Text(meal.recipeLink)
                     Link("link da receita", destination: URL(string: meal.recipeLink)!)
                 }
                 

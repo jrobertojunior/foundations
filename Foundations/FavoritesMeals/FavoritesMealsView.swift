@@ -22,8 +22,8 @@ struct FavoritesMealsView: View {
                 }
                 
                 SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
-                IngredientView(ingredient: "Arroz")
-                IngredientView(ingredient: "Feijao")
+                IngredientListItemView(ingredient: "Arroz")
+                IngredientListItemView(ingredient: "Feijao")
                 
                 Spacer()
                 Button(action: {
