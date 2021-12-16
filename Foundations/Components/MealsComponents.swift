@@ -14,20 +14,20 @@ struct Meal: Identifiable, Decodable {
         var unit: String
     }
     
-    var isSelected: Bool = false
+    var isSelected: Bool
     var id: Int
     
-    var ingredients: [IngredientsAmount] = Array<IngredientsAmount>()
+    var ingredients: [IngredientsAmount]
     
-    var prots: Float = 17.0
-    var carbs: Float = 100.0
-    var fats: Float = 31.0
-    var cals: Float = 486.0
+    var prots: Float
+    var carbs: Float
+    var fats: Float
+    var cals: Float
     
-    var name: String = "salada"
-    var imageName: String = ""
-    var recipeLink: String = ""
-    var time: Int = 0
+    var name: String
+    var imageName: String
+    var recipeLink: String
+    var time: Int
 }
 
 
