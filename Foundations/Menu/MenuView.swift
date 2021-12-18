@@ -72,6 +72,8 @@ struct MenuView: View {
                     }
                 }.onAppear {
                     selectedMealId = -1
+                    
+                    menuViewModel.updateMenu()
                 }
             }
             .padding(20)

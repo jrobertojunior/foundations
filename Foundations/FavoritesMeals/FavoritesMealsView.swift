@@ -16,45 +16,43 @@ struct FavoritesMealsView: View {
     @State var selectedIngredientId = -1
     
     var body: some View {
-        NavigationView {
-            VStack {
-                VStack(alignment: .leading) {
-                    FavoriteTextView(textValue: "Quais os ingredientes mais comuns nas suas refeições? Assim poderemos oferecer um cardápio mais efetivo e personalizado.")
-                    FavoriteTextView(textValue: "Ingredientes")
-                }
-                
-                //SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
-                
-                ScrollView(){
-                    ForEach (favoritesMealsViewModel.ingredients) { ingredient in
-                        NavigationLink(destination: IngredientView(ingredient: ingredient), isActive: .constant(selectedIngredientId == ingredient.id)) {
-                            IngredientListItemView(ingredient: ingredient.name, isSelected: ingredient.isSelected)
-                                .onTapGesture {
-                                    favoritesMealsViewModel.chooseIngredient(ingredient)
-                                }
-                                .onLongPressGesture {
-                                    selectedIngredientId = ingredient.id
-                                }
-                        }
+        VStack {
+            VStack(alignment: .leading) {
+                FavoriteTextView(textValue: "Quais os ingredientes mais comuns nas suas refeições? Assim poderemos oferecer um cardápio mais efetivo e personalizado.")
+                FavoriteTextView(textValue: "Ingredientes")
+            }
+            
+            //SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
+            
+            ScrollView(){
+                ForEach (favoritesMealsViewModel.ingredients) { ingredient in
+                    NavigationLink(destination: IngredientView(ingredient: ingredient), isActive: .constant(selectedIngredientId == ingredient.id)) {
+                        IngredientListItemView(ingredient: ingredient.name, isSelected: ingredient.isSelected)
+                            .onTapGesture {
+                                favoritesMealsViewModel.chooseIngredient(ingredient)
+                            }
+                            .onLongPressGesture {
+                                selectedIngredientId = ingredient.id
+                            }
                     }
-                }.onAppear {
-                    selectedIngredientId = -1
                 }
+            }.onAppear {
+                selectedIngredientId = -1
+            }
+            
+            Spacer()
+//            Button(action: {
+//                
+//            }, label: {
+//                Text("Select all")
+//                    .foregroundColor(.white)
+//                    .bold()
+//                    .padding()
+//                    .background(Color(.systemBlue))
+//                    .cornerRadius(10)
+//            })
                 
-                Spacer()
-//                Button(action: {
-//                    
-//                }, label: {
-//                    Text("Continuar")
-//                        .foregroundColor(.white)
-//                        .bold()
-//                        .padding()
-//                        .background(Color(.systemBlue))
-//                        .cornerRadius(10)
-//                })
-                    
-            }.navigationTitle("Ingredientes favoritos")
-        }
+        }.navigationTitle("Ingredientes favoritos")
     }
 }
 

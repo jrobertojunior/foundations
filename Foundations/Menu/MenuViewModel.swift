@@ -22,6 +22,10 @@ class MenuViewModel: ObservableObject {
         return model.mealsDinner
     }
     
+    func updateMenu() {
+        model.updateMenu()
+    }
+    
     //MARK: - Intent(s)
     
     func chooseBreakFast(_ meal: Meal) {
