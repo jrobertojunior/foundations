@@ -41,6 +41,12 @@ struct FavoritesMealsModel {
         return 0
     }
     
+    mutating func changeIngredientsSelection(selection: Bool) {
+        for index in 0..<ingredients.count {
+            ingredients[index].isSelected = selection
+        }
+    }
+    
     mutating fileprivate func initiateIngredients() {
         var chosenIndex: Int
         for ingredientName in ingredientsNames {

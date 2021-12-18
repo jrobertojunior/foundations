@@ -41,16 +41,29 @@ struct FavoritesMealsView: View {
             }
             
             Spacer()
-//            Button(action: {
-//                
-//            }, label: {
-//                Text("Select all")
-//                    .foregroundColor(.white)
-//                    .bold()
-//                    .padding()
-//                    .background(Color(.systemBlue))
-//                    .cornerRadius(10)
-//            })
+            HStack {
+                Button(action: {
+                    favoritesMealsViewModel.changeIngredientsSelection(selection: true)
+                }, label: {
+                    Text(" Select all ")
+                        .foregroundColor(.white)
+                        .bold()
+                        .padding()
+                        .background(Color(.systemBlue))
+                        .cornerRadius(10)
+                })
+                
+                Button(action: {
+                    favoritesMealsViewModel.changeIngredientsSelection(selection: false)
+                }, label: {
+                    Text("Deselect all")
+                        .foregroundColor(.white)
+                        .bold()
+                        .padding()
+                        .background(Color(.systemBlue))
+                        .cornerRadius(10)
+                })
+            }
                 
         }.navigationTitle("Ingredientes favoritos")
     }
