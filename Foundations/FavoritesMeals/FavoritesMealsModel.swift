@@ -60,6 +60,8 @@ struct FavoritesMealsModel {
             ingredientsNames =  UserDefaults.standard.stringArray(forKey: "ingredientsNames")! as [String]
         }
         
+        ingredients = ingredients.sorted { $0.name.lowercased() < $1.name.lowercased() }
+        
         initiateIngredients()
     }
 }
