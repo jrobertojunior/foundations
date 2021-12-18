@@ -10,7 +10,7 @@ import SwiftUI
 
 class GoalViewModel: ObservableObject {
     @Published private var model: GoalModel = GoalModel()
-    
+        
     var goal: GoalModel.Goal {
         return model.goal
     }
