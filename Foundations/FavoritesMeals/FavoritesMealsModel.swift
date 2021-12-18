@@ -41,6 +41,12 @@ struct FavoritesMealsModel {
         return 0
     }
     
+    mutating func changeIngredientsSelection(selection: Bool) {
+        for index in 0..<ingredients.count {
+            ingredients[index].isSelected = selection
+        }
+    }
+    
     mutating fileprivate func initiateIngredients() {
         var chosenIndex: Int
         for ingredientName in ingredientsNames {
@@ -59,6 +65,8 @@ struct FavoritesMealsModel {
         if UserDefaults.standard.stringArray(forKey: "ingredientsNames") != nil {
             ingredientsNames =  UserDefaults.standard.stringArray(forKey: "ingredientsNames")! as [String]
         }
+        
+        ingredients = ingredients.sorted { $0.name.lowercased() < $1.name.lowercased() }
         
         initiateIngredients()
     }

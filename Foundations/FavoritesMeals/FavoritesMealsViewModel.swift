@@ -17,6 +17,10 @@ class FavoritesMealsViewModel: ObservableObject {
     
     //MARK: - Intent(s)
     
+    func changeIngredientsSelection(selection: Bool) {
+        model.changeIngredientsSelection(selection: selection)
+    }
+    
     func chooseIngredient(_ ingredient: Ingredient) {
         model.selectIngredient(ingredient)
     }
