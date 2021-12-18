@@ -37,6 +37,19 @@ struct GoalView: View {
             
             Spacer()
             
+            Button(action: {
+                
+            }, label: {
+                NavigationLink(destination: FavoritesMealsView()) {
+                    Text("Comidas favoritas")
+                        .foregroundColor(.white)
+                        .bold()
+                        .padding()
+                        .background(Color(.systemBlue))
+                        .cornerRadius(10)
+                }
+            })
+            
             Divider()
             Text("Seu IMC atual é de 24,2. A recomendação é que seu peso esteja entre 53kg e 72kg.")
             

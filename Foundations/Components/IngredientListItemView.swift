@@ -9,6 +9,7 @@ import SwiftUI
 
 struct IngredientListItemView: View {
     var ingredient: String
+    var isSelected: Bool
     
     var body: some View {
         VStack(alignment: .leading){
@@ -18,8 +19,13 @@ struct IngredientListItemView: View {
                 Button(action: {
                     
                 }, label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(Color(.red))
+                    if isSelected {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(Color(.red))
+                    } else {
+                        Image(systemName: "circle")
+                            .foregroundColor(Color(.black))
+                    }
                 })
             }
             .padding()
@@ -28,8 +34,10 @@ struct IngredientListItemView: View {
     }
 }
 
+
+
 struct IngredientListItemViewView_Previews: PreviewProvider {
     static var previews: some View {
-        IngredientListItemView(ingredient: "Arroz")
+        IngredientListItemView(ingredient: "Arroz", isSelected: false)
     }
 }

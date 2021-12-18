@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class MealViewModel: ObservableObject {
     private var model: MealModel

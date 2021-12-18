@@ -91,7 +91,6 @@ struct MenuModel {
     fileprivate func getMealInitIndex(_ mealsList: [Meal]) -> Int {
         let mealListSize = mealsList.count
         let auxIndex: Int = Int.random(in: 0..<mealListSize)
-        print(auxIndex)
         
         return auxIndex
     }
@@ -132,6 +131,7 @@ struct MenuModel {
         
         loadMeals(from: data.mealsData)
         
+        //Verificar se algo mudou no onAppear
         //mealsBreakfast = getMealsWithPreferredIngredients(from: mealsBreakfast)
         
         if isANewDay() {

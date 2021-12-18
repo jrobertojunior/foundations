@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct FavoritesMealsView: View {
-    @State var ingredientName: String = ""
-    
-    @State var searchIngredient: String = ""
-    @State var isSearching: Bool = false
+//    @State var ingredientName: String = ""
+//
+//    @State var searchIngredient: String = ""
+//    @State var isSearching: Bool = false
+    @ObservedObject var favoritesMealsViewModel = FavoritesMealsViewModel()
+    @State var selectedIngredientId = -1
     
     var body: some View {
         NavigationView {
@@ -21,21 +23,35 @@ struct FavoritesMealsView: View {
                     FavoriteTextView(textValue: "Ingredientes")
                 }
                 
-                SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
-                IngredientListItemView(ingredient: "Arroz")
-                IngredientListItemView(ingredient: "Feijao")
+                //SearchBar(text: "Search ingredient...", searchText: $searchIngredient, isSearching: $isSearching)
+                
+                ScrollView(){
+                    ForEach (favoritesMealsViewModel.ingredients) { ingredient in
+                        NavigationLink(destination: IngredientView(ingredient: ingredient), isActive: .constant(selectedIngredientId == ingredient.id)) {
+                            IngredientListItemView(ingredient: ingredient.name, isSelected: ingredient.isSelected)
+                                .onTapGesture {
+                                    favoritesMealsViewModel.chooseIngredient(ingredient)
+                                }
+                                .onLongPressGesture {
+                                    selectedIngredientId = ingredient.id
+                                }
+                        }
+                    }
+                }.onAppear {
+                    selectedIngredientId = -1
+                }
                 
                 Spacer()
-                Button(action: {
-                    
-                }, label: {
-                    Text("Continuar")
-                        .foregroundColor(.white)
-                        .bold()
-                        .padding()
-                        .background(Color(.systemBlue))
-                        .cornerRadius(10)
-                })
+//                Button(action: {
+//                    
+//                }, label: {
+//                    Text("Continuar")
+//                        .foregroundColor(.white)
+//                        .bold()
+//                        .padding()
+//                        .background(Color(.systemBlue))
+//                        .cornerRadius(10)
+//                })
                     
             }.navigationTitle("Ingredientes favoritos")
         }
@@ -55,43 +71,6 @@ struct FavoriteTextView: View {
 
 
 
-/*
- .toolbar { // <2>
-     ToolbarItem(placement: .principal) { // <3>
-         HStack {
-             Text("Ingredientes favoritos")
-                 .font(.largeTitle).fontWeight(.bold).lineLimit(2)
-             Spacer()
-         }
-     }
- }
- 
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -102,9 +81,7 @@ struct FavoriteTextView: View {
 struct FavoritesMealsView_Previews: PreviewProvider {
     static var previews: some View {
         FavoritesMealsView()
-            .previewDevice("iPhone 11")
         FavoritesMealsView()
-            .previewDevice("iPhone 11")
             .preferredColorScheme(.dark)
     }
 }

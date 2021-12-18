@@ -1,7 +1,8 @@
 [
   {
+    "isSelected": false,
     "id": 1,
-    "name": "Egg",
+    "name": "Ovo",
     "carb": 0.34,
     "prot": 5.54,
     "fats": 4.37,
@@ -10,8 +11,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 2,
-    "name": "White bread",
+    "name": "Fatia de pao",
     "carb": 12.65,
     "prot": 1.91,
     "fats": 0.82,
@@ -20,8 +22,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 3,
-    "name": "Ham",
+    "name": "Presunto",
     "carb": 0.0,
     "prot": 2.65,
     "fats": 1.35,
@@ -30,8 +33,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 4,
-    "name": "Cream cheese",
+    "name": "Requeijao",
     "carb": 0.37,
     "prot": 0.48,
     "fats": 2.05,
@@ -40,8 +44,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 5,
-    "name": "Milk",
+    "name": "Leite",
     "carb": 10.0,
     "prot": 5.8,
     "fats": 6.0,
@@ -50,8 +55,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 6,
-    "name": "Cooking oil",
+    "name": "Oleo de girassol",
     "carb": 0.0,
     "prot": 0.0,
     "fats": 12.0,
@@ -60,6 +66,7 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 7,
     "name": "Polvilho",
     "carb": 90.0,
@@ -70,8 +77,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 8,
-    "name": "Parmesan cheese",
+    "name": "Queijo parmesao",
     "carb": 3.23,
     "prot": 36.6,
     "fats": 26.6,
@@ -80,8 +88,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 9,
-    "name": "Grated parmesan cheese",
+    "name": "Queijo parmesao ralado",
     "carb": 0.0,
     "prot": 7.0,
     "fats": 5.0,
@@ -90,8 +99,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 10,
-    "name": "Butter",
+    "name": "Manteiga",
     "carb": 0.01,
     "prot": 0.12,
     "fats": 11.52,
@@ -100,8 +110,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 11,
-    "name": "Mushroom",
+    "name": "Cogumelo",
     "carb": 3.09,
     "prot": 2.17,
     "fats": 0.47,
@@ -110,8 +121,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 12,
-    "name": "Strawberry",
+    "name": "Morango",
     "carb": 6.8,
     "prot": 0.9,
     "fats": 0.3,
@@ -120,6 +132,7 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 13,
     "name": "Jabuticaba",
     "carb": 0.65,
@@ -130,6 +143,7 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 14,
     "name": "Banana",
     "carb": 23.8,
@@ -140,8 +154,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 15,
-    "name": "Peanut butter",
+    "name": "Pasta de amendoim",
     "carb": 2.36,
     "prot": 2.66,
     "fats": 2.66,
@@ -150,8 +165,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 16,
-    "name": "Honey",
+    "name": "Mel",
     "carb": 12.3,
     "prot": 0.0,
     "fats": 0.0,
@@ -160,8 +176,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 17,
-    "name": "Olive oil",
+    "name": "Azeite",
     "carb": 0.0,
     "prot": 0.0,
     "fats": 8.0,
@@ -170,6 +187,7 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 18,
     "name": "Shoyu",
     "carb": 1.77,
@@ -180,8 +198,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 19,
-    "name": "Fresh milk cream",
+    "name": "Creme de leite fresco",
     "carb": 0.0,
     "prot": 0.4,
     "fats": 3.53,
@@ -190,8 +209,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 20,
-    "name": "Cottage cheese",
+    "name": "Queijo cottage",
     "carb": 1.6,
     "prot": 6.0,
     "fats": 2.15,
@@ -200,8 +220,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 21,
-    "name": "flour",
+    "name": "Farinha de trigo",
     "carb": 14.56,
     "prot": 1.96,
     "fats": 0.28,
@@ -210,6 +231,7 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 22,
     "name": "Tapioca",
     "carb": 22.0,
@@ -220,8 +242,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 23,
-    "name": "Chia seed",
+    "name": "Semente de chia",
     "carb": 2.05,
     "prot": 2.15,
     "fats": 4.1,
@@ -230,8 +253,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 24,
-    "name": "Papaya",
+    "name": "Mamao",
     "carb": 32.24,
     "prot": 1.55,
     "fats": 0.31,
@@ -240,8 +264,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 25,
-    "name": "Sugar",
+    "name": "Acucar",
     "carb": 23.88,
     "prot": 0.0,
     "fats": 0.0,
@@ -250,8 +275,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 26,
-    "name": "Tuna",
+    "name": "Atum",
     "carb": 0.0,
     "prot": 29.0,
     "fats": 0.6,
@@ -260,8 +286,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 27,
-    "name": "Salmon",
+    "name": "Salmao",
     "carb": 0.49,
     "prot": 23.97,
     "fats": 7.56,
@@ -270,8 +297,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 28,
-    "name": "Zucchini",
+    "name": "Abobrinha",
     "carb": 3.1,
     "prot": 1.2,
     "fats": 0.3,
@@ -280,8 +308,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 29,
-    "name": "Pork",
+    "name": "Bisteca de porco",
     "carb": 0.0,
     "prot": 23.0,
     "fats": 8.7,
@@ -290,8 +319,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 30,
-    "name": "Lemon",
+    "name": "Limao",
     "carb": 1.92,
     "prot": 0.11,
     "fats": 0.0,
@@ -300,8 +330,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 31,
-    "name": "Parsley",
+    "name": "Salsinha",
     "carb": 0.32,
     "prot": 0.15,
     "fats": 0.04,
@@ -310,8 +341,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 32,
-    "name": "Onion",
+    "name": "Cebola",
     "carb": 6.23,
     "prot": 1.19,
     "fats": 0.07,
@@ -320,8 +352,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 33,
-    "name": "Garlic",
+    "name": "Alho",
     "carb": 0.98,
     "prot": 0.35,
     "fats": 0.01,
@@ -330,8 +363,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 34,
-    "name": "Olive",
+    "name": "Azeitona",
     "carb": 0.01,
     "prot": 0.04,
     "fats": 0.57,
@@ -340,8 +374,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 35,
-    "name": "Chicken breast",
+    "name": "Peito de galinha",
     "carb": 0.0,
     "prot": 31.0,
     "fats": 3.6,
@@ -350,8 +385,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 36,
-    "name": "Bell pepper (Green)",
+    "name": "Pimentao verde",
     "carb": 1.27,
     "prot": 0.61,
     "fats": 0.11,
@@ -360,8 +396,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 37,
-    "name": "Cauliflower",
+    "name": "Couve-flor",
     "carb": 1.13,
     "prot": 0.48,
     "fats": 0.05,
@@ -370,8 +407,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 38,
-    "name": "Carrot",
+    "name": "Cenoura",
     "carb": 9.58,
     "prot": 0.93,
     "fats": 0.24,
@@ -380,8 +418,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 39,
-    "name": "Broccoli",
+    "name": "Brocolis",
     "carb": 4.0,
     "prot": 3.6,
     "fats": 0.3,
@@ -390,8 +429,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 40,
-    "name": "Tomato",
+    "name": "Tomate",
     "carb": 2.41,
     "prot": 0.55,
     "fats": 0.12,
@@ -400,8 +440,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 41,
-    "name": "Cucumber",
+    "name": "Pepino",
     "carb": 3.6,
     "prot": 0.7,
     "fats": 0.1,
@@ -410,8 +451,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 42,
-    "name": "Lettuce",
+    "name": "Alface",
     "carb": 2.9,
     "prot": 1.4,
     "fats": 0.2,
@@ -420,8 +462,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 43,
-    "name": "Radish",
+    "name": "Rabanete",
     "carb": 3.4,
     "prot": 0.7,
     "fats": 0.1,
@@ -430,8 +473,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 44,
-    "name": "Potato",
+    "name": "Batata",
     "carb": 7.2,
     "prot": 0,
     "fats": 0,
@@ -440,8 +484,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 45,
-    "name": "Sweet potato",
+    "name": "Batata doce",
     "carb": 20.0,
     "prot": 1.6,
     "fats": 0.1,
@@ -450,8 +495,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 46,
-    "name": "Soy",
+    "name": "Soja",
     "carb": 7.0,
     "prot": 81.0,
     "fats": 3.4,
@@ -460,8 +506,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 47,
-    "name": "Mozzarella cheese",
+    "name": "Queijo mussarela",
     "carb": 3.83,
     "prot": 25.96,
     "fats": 20.03,
@@ -470,8 +517,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 48,
-    "name": "Spinach",
+    "name": "Espinafre",
     "carb": 3.63,
     "prot": 2.86,
     "fats": 0.39,
@@ -480,8 +528,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 49,
-    "name": "Spaghetti",
+    "name": "Espaguete",
     "carb": 31.0,
     "prot": 6.0,
     "fats": 0.9,
@@ -490,8 +539,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 50,
-    "name": "Eggplant",
+    "name": "Berinjela",
     "carb": 3.75,
     "prot": 3.0,
     "fats": 0.25,
@@ -500,8 +550,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 51,
-    "name": "Sesame",
+    "name": "Gergelim",
     "carb": 0.97,
     "prot": 2.12,
     "fats": 5.04,
@@ -510,8 +561,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 52,
-    "name": "Whole wheat bread",
+    "name": "Pao integral",
     "carb": 9.25,
     "prot": 2.6,
     "fats": 0.45,
@@ -520,8 +572,9 @@
     "unit": "unit"
   },
   {
+    "isSelected": false,
     "id": 53,
-    "name": "Cherry tomato",
+    "name": "Tomate cereja",
     "carb": 3.92,
     "prot": 0.88,
     "fats": 0.2,
@@ -530,8 +583,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 54,
-    "name": "Pumpkin",
+    "name": "Abobora",
     "carb": 7.0,
     "prot": 1.0,
     "fats": 0.1,
@@ -540,8 +594,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 55,
-    "name": "Rice",
+    "name": "Arroz",
     "carb": 10.81,
     "prot": 1.01,
     "fats": 0.04,
@@ -550,8 +605,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 56,
-    "name": "Black beans",
+    "name": "Feijao preto",
     "carb": 0.95,
     "prot": 0.77,
     "fats": 0.09,
@@ -560,8 +616,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 57,
-    "name": "chickpea",
+    "name": "Grao de bico",
     "carb": 61.0,
     "prot": 19.0,
     "fats": 6.0,
@@ -570,8 +627,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 58,
-    "name": "Oat",
+    "name": "Aveia",
     "carb": 9.15,
     "prot": 3.11,
     "fats": 1.27,
@@ -580,8 +638,9 @@
     "unit": "ml"
   },
   {
+    "isSelected": false,
     "id": 59,
-    "name": "Rump",
+    "name": "Alcatra",
     "carb": 0.9,
     "prot": 27.0,
     "fats": 11.0,
@@ -590,6 +649,7 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 60,
     "name": "Bacon",
     "carb": 1.4,
@@ -600,8 +660,9 @@
     "unit": "grams"
   },
   {
+    "isSelected": false,
     "id": 61,
-    "name": "Asparagus",
+    "name": "Aspargos",
     "carb": 3.9,
     "prot": 2.2,
     "fats": 0.1,

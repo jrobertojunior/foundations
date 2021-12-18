@@ -37,6 +37,7 @@ struct Meal: Identifiable, Decodable {
 
 
 struct Ingredient: Identifiable, Decodable {
+    var isSelected: Bool = false
     let id: Int
     
     var name: String = "Not found"
