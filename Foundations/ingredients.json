@@ -8,7 +8,7 @@
     "fats": 4.37,
     "cals": 65.0,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -19,7 +19,7 @@
     "fats": 0.82,
     "cals": 66.0,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -30,7 +30,7 @@
     "fats": 1.35,
     "cals": 26.5,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -74,7 +74,7 @@
     "fats": 0.0,
     "cals": 0.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -85,7 +85,7 @@
     "fats": 26.6,
     "cals": 386.66,
     "amount": 100,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -118,7 +118,7 @@
     "fats": 0.47,
     "cals": 28.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -129,7 +129,7 @@
     "fats": 0.3,
     "cals": 30.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -140,7 +140,7 @@
     "fats": 0.01,
     "cals": 2.9,
     "amount": 5.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -151,7 +151,7 @@
     "fats": 0.3,
     "cals": 99.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -239,7 +239,7 @@
     "fats": 3.9,
     "cals": 130.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -261,7 +261,7 @@
     "fats": 0.31,
     "cals": 124.0,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -283,7 +283,7 @@
     "fats": 0.6,
     "cals": 130.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -294,7 +294,7 @@
     "fats": 7.56,
     "cals": 171.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -305,7 +305,7 @@
     "fats": 0.3,
     "cals": 17.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -316,7 +316,7 @@
     "fats": 8.7,
     "cals": 170.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -327,7 +327,7 @@
     "fats": 0.0,
     "cals": 5.18,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -349,7 +349,7 @@
     "fats": 0.07,
     "cals": 27.3,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -360,7 +360,7 @@
     "fats": 0.01,
     "cals": 5.65,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -371,7 +371,7 @@
     "fats": 0.57,
     "cals": 5.48,
     "amount": 4.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -382,7 +382,7 @@
     "fats": 3.6,
     "cals": 165.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -393,7 +393,7 @@
     "fats": 0.11,
     "cals": 11.55,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -415,7 +415,7 @@
     "fats": 0.24,
     "cals": 41.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -426,7 +426,7 @@
     "fats": 0.3,
     "cals": 25.5,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -437,7 +437,7 @@
     "fats": 0.12,
     "cals": 11.0,
     "amount": 62.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -448,7 +448,7 @@
     "fats": 0.1,
     "cals": 16.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -459,7 +459,7 @@
     "fats": 0.2,
     "cals": 15.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -470,7 +470,7 @@
     "fats": 0.1,
     "cals": 16.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -481,7 +481,7 @@
     "fats": 0,
     "cals": 30.0,
     "amount": 30.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -492,7 +492,7 @@
     "fats": 0.1,
     "cals": 86.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -503,7 +503,7 @@
     "fats": 3.4,
     "cals": 338.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -514,7 +514,7 @@
     "fats": 20.03,
     "cals": 302.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -525,7 +525,7 @@
     "fats": 0.39,
     "cals": 23.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -536,7 +536,7 @@
     "fats": 0.9,
     "cals": 158.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -547,7 +547,7 @@
     "fats": 0.25,
     "cals": 50.0,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -569,7 +569,7 @@
     "fats": 0.45,
     "cals": 62.5,
     "amount": 1.0,
-    "unit": "unit"
+    "unit": "unidade"
   },
   {
     "isSelected": false,
@@ -580,7 +580,7 @@
     "fats": 0.2,
     "cals": 18.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -591,7 +591,7 @@
     "fats": 0.1,
     "cals": 26.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -624,7 +624,7 @@
     "fats": 6.0,
     "cals": 364.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -646,7 +646,7 @@
     "fats": 11.0,
     "cals": 213.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -657,7 +657,7 @@
     "fats": 42.0,
     "cals": 541.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   },
   {
     "isSelected": false,
@@ -668,6 +668,6 @@
     "fats": 0.1,
     "cals": 20.0,
     "amount": 100.0,
-    "unit": "grams"
+    "unit": "gramas"
   }
 ]
