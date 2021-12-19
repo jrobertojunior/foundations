@@ -51,7 +51,7 @@ struct FavoritesMealsView: View {
                         .padding()
                         .background(Color(.systemBlue))
                         .cornerRadius(10)
-                })
+                }).frame(maxWidth: .infinity)
                 
                 Button(action: {
                     favoritesMealsViewModel.changeIngredientsSelection(selection: false)
@@ -62,7 +62,7 @@ struct FavoritesMealsView: View {
                         .padding()
                         .background(Color(.systemBlue))
                         .cornerRadius(10)
-                })
+                }).frame(maxWidth: .infinity)
             }
                 
         }.navigationTitle("Ingredientes favoritos")

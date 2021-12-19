@@ -65,7 +65,7 @@ struct GoalView: View {
                 
             }, label: {
                 NavigationLink(destination: FavoritesMealsView()) {
-                    Text("Comidas favoritas")
+                    Text("Ingredientes favoritos")
                         .foregroundColor(.white)
                         .bold()
                         .padding()

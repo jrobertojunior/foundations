@@ -16,17 +16,13 @@ struct IngredientListItemView: View {
             HStack{
                 Text(ingredient)
                 Spacer()
-                Button(action: {
-                    
-                }, label: {
-                    if isSelected {
-                        Image(systemName: "xmark.circle.fill")
-                            .foregroundColor(Color(.red))
-                    } else {
-                        Image(systemName: "circle")
-                            .foregroundColor(Color(.black))
-                    }
-                })
+                if isSelected {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(Color(.systemBlue))
+                } else {
+                    Image(systemName: "circle")
+                        .foregroundColor(Color(.gray))
+                }
             }
             .padding()
             Divider()
