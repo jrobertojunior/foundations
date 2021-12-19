@@ -69,7 +69,8 @@ struct MealView: View {
                 Spacer()
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            .navigationTitle(meal.name)
+            //.navigationTitle(meal.name)
+            .navigationBarTitle(Text(meal.name), displayMode: .inline)
         }
         
     }
