@@ -103,7 +103,7 @@ struct MealCardView: View {
             let shape = Image(meal.imageName)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 160.0, height: 180.0)
+                .frame(width: 130.0, height: 160.0)
                 .clipped()
                 //.resizable(resizingMode: .stretch)
                 //.cornerRadius(13)
@@ -112,6 +112,7 @@ struct MealCardView: View {
                     .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.green, lineWidth: 5))
             }else{
                 shape
+                    .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.gray, lineWidth: 1))
             }
         }
     }
