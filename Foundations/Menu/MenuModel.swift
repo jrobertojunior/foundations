@@ -155,9 +155,11 @@ struct MenuModel {
     }
     
     mutating func updateMenu() {
-        let loadedIngredients: Array<String> = UserDefaults.standard.stringArray(forKey: "ingredientsNames")! as [String]
-        if !(preferedIngredients.elementsEqual(loadedIngredients)) {
-            loadPreferredMeals(forceChange: true)
+        if UserDefaults.standard.stringArray(forKey: "ingredientsNames") != nil  {
+            let loadedIngredients: Array<String> = UserDefaults.standard.stringArray(forKey: "ingredientsNames")! as [String]
+            if !(preferedIngredients.elementsEqual(loadedIngredients)) {
+                loadPreferredMeals(forceChange: true)
+            }
         }
         
         var mealName: String
