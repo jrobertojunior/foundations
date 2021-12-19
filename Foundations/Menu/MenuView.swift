@@ -105,8 +105,8 @@ struct MealCardView: View {
                 .scaledToFit()
                 .frame(width: 130.0, height: 160.0)
                 .clipped()
-                //.resizable(resizingMode: .stretch)
-                //.cornerRadius(13)
+            //.resizable(resizingMode: .stretch)
+            //.cornerRadius(13)
             if meal.isSelected {
                 shape
                     .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.green, lineWidth: 5))
