@@ -101,8 +101,12 @@ struct MealCardView: View {
     var body: some View {
         ZStack{
             let shape = Image(meal.imageName)
-                .resizable(resizingMode: .stretch)
-                .cornerRadius(13)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 160.0, height: 180.0)
+                .clipped()
+                //.resizable(resizingMode: .stretch)
+                //.cornerRadius(13)
             if meal.isSelected {
                 shape
                     .overlay(RoundedRectangle(cornerRadius: 13).strokeBorder(Color.green, lineWidth: 5))
