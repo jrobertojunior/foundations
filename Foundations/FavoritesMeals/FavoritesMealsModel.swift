@@ -44,7 +44,16 @@ struct FavoritesMealsModel {
     mutating func changeIngredientsSelection(selection: Bool) {
         for index in 0..<ingredients.count {
             ingredients[index].isSelected = selection
+            
+            if ingredients[index].isSelected && !ingredientsNames.contains(ingredients[index].name) {
+                ingredientsNames.append(ingredients[index].name)
+            }
         }
+        if (selection == false) {
+            ingredientsNames.removeAll()
+        }
+        
+        UserDefaults.standard.set(ingredientsNames, forKey: "ingredientsNames")
     }
     
     mutating fileprivate func initiateIngredients() {
