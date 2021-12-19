@@ -15,7 +15,9 @@ class ViewModel: ObservableObject {
     
     func getImc() -> Float {
         if (weight != "" && height != "" && age != "" && gender != "") {
-            return Float(weight)! / ((Float(height)!/100) * (Float(height)!/100))
+            let h: Float = Float(height)!/100
+            let w: Float = Float(weight)!
+            return w / (h * h)
         }
         
         return -1
@@ -28,6 +30,17 @@ class ViewModel: ObservableObject {
         if (imc < 24.9) { return "normal"}
         if (imc < 30) { return "sobrepeso"}
         return "obesidade"
+    }
+    
+    func getIdealWeightRangeText() -> String {
+        let lowerImc: Float = 18.5
+        let upperImc: Float = 24.9
+        let h: Float = Float(height)!/100
+
+        let lowerWeight = (h*h)*lowerImc
+        let upperWeight = (h*h)*upperImc
+        
+        return "Seu peso ideal deve estar entre \(String(format: "%0.1f",lowerWeight))kg e \(String(format: "%0.1f", upperWeight))kg."
     }
 }
 
@@ -55,7 +68,7 @@ struct GoalView: View {
             if (vm.getImc() == -1) {
                 Text("Insira os dados corretamente")
             } else {
-                Text("Seu IMC é de \(String(format: "%0.1f", vm.getImc())) kg/m2 (\(vm.getHealthStatus()))")
+                Text("Seu IMC é de \(String(format: "%0.1f", vm.getImc())) kg/m2 (\(vm.getHealthStatus())). \(vm.getIdealWeightRangeText())")
             }
 
             
