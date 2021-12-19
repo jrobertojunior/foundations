@@ -202,9 +202,11 @@ struct MenuModel {
             
             loadMeals(from: data.mealsData)
         }
-        mealsBreakfast = getMealsWithPreferredIngredients(from: mealsBreakfast)
-        mealsLunch = getMealsWithPreferredIngredients(from: mealsLunch)
-        mealsDinner = getMealsWithPreferredIngredients(from: mealsDinner)
+        if !preferedIngredients.isEmpty {
+            mealsBreakfast = getMealsWithPreferredIngredients(from: mealsBreakfast)
+            mealsLunch = getMealsWithPreferredIngredients(from: mealsLunch)
+            mealsDinner = getMealsWithPreferredIngredients(from: mealsDinner)
+        }
         
         var breakfastIndex: Int = 0
         var lunchIndex: Int = 0
