@@ -11,9 +11,14 @@ struct MealView: View {
     let meal: Meal
     @ObservedObject var mealViewModel: MealViewModel
     
+    var factor: Float = 1
+    
     init(meal selectedMeal: Meal) {
         meal = selectedMeal
         mealViewModel = MealViewModel(selectedMeal: meal)
+        
+        factor = (Float(UserDefaults.standard.double(forKey: "totalCalories"))/3)/meal.cals
+
     }
     
     var body: some View {
@@ -27,10 +32,10 @@ struct MealView: View {
                     .padding(.vertical)
                 
                 VStack {
-                    MacronutrientView(attribute: "Proteínas", value: String(meal.prots) + "g")
-                    MacronutrientView(attribute: "Gorduras", value: String(meal.fats) + "g")
-                    MacronutrientView(attribute: "Carbohidratos", value: String(meal.carbs) + "g")
-                    MacronutrientView(attribute: "Calorias", value: String(meal.cals) + "kcal")
+                    MacronutrientView(attribute: "Proteínas", value: String(format: "%0.1f", meal.prots*factor) + "g")
+                    MacronutrientView(attribute: "Gorduras", value: String(format: "%0.1f", meal.fats*factor) + "g")
+                    MacronutrientView(attribute: "Carbohidratos", value: String(format: "%0.1f", meal.carbs*factor) + "g")
+                    MacronutrientView(attribute: "Calorias", value: String(format: "%0.1f", meal.cals*factor) + "kcal")
                 }
                 
                 Divider()
@@ -49,7 +54,7 @@ struct MealView: View {
                                 Text("  • " + ingredient.name)
                                     .font(.title3)
                                 Spacer()
-                                Text(String(ingredient.amount) + " " + ingredient.unit)
+                                Text(String(round(ingredient.amount*factor)) + " " + ingredient.unit)
                                     .font(.title3)
                             }.buttonStyle(PlainButtonStyle()) 
                         }

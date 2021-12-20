@@ -14,9 +14,12 @@ class ViewModel: ObservableObject {
     @AppStorage("gender") var gender = ""
     @AppStorage("healthStatus") var healthStatus = ""
     
-    @Published var isValid = false
+    @AppStorage("totalCalories") var totalCalories: Double = -1
+    
+    @Published var isValid = true
 
     func getImc() -> Float {
+        print("getting imc")
         if (weight != "" && height != "" && age != "" && gender != "") {
             let h: Float = Float(height)!/100
             let w: Float = Float(weight)!
@@ -27,8 +30,8 @@ class ViewModel: ObservableObject {
     }
     
     func updateUserDefaults() -> Void {
-//        UserDefaults.standard.set(getHealthStatus(), forKey: "healthStatus")
-        healthStatus = getHealthStatus()
+        print("saving total calories")
+        totalCalories = getTotalCalories()
     }
     
     func getHealthStatus() -> String {
@@ -50,6 +53,33 @@ class ViewModel: ObservableObject {
         
         return "Seu peso ideal deve estar entre \(String(format: "%0.1f",lowerWeight))kg e \(String(format: "%0.1f", upperWeight))kg."
     }
+    
+    func getBasalCalories() -> Double {
+        let w: Double = Double(weight)!
+        let a: Int = Int(age)!
+        
+        if (gender == "F") {
+            if (a <= 3) {return (((58 * w) - 31)/1000)}
+            if (a <= 10) {return (((20300 * w) + 486)/1000)}
+            if (a <= 18) {return (((13400 * w) + 693)/1000)}
+            if (a <= 30) {return (((14800 * w) + 486)/1000)}
+            if (a <= 60) {return (((8100 * w) + 846)/1000)}
+            return (((9000 * w) + 658)/1000)
+            
+        } else if (gender == "M") {
+            if (a <= 3) { return (((600 * w) - 30.4)/1000)}
+            if (a <= 10) {return (((22700 * w) - 505)/1000)}
+            if (a <= 18) { return (((17700 * w) - 658)/1000)}
+            if (a <= 30) {return (((15000 * w) - 692)/1000)}
+            if (a <= 60) {return (((11400 * w) - 873)/1000)}
+            return (((11700 * w) + 588)/1000)
+        }
+        return -1
+    }
+    
+    func getTotalCalories() -> Double {
+        return getBasalCalories() * 1.55 // multiply by activity factor
+    }
 }
 
 struct GoalView: View {
@@ -59,10 +89,6 @@ struct GoalView: View {
     var body: some View {
         VStack{
             VStack{
-//                ZStack{
-//                    Circle().fill(Color(.systemGray4)).frame(width: 100, height: 100)
-//                    Image(systemName: "camera")
-//                }
                 Text("Dados pessoais")
                     .font(.title)
                 GoalField(property: "Altura (cm)", value: $vm.height)
@@ -72,18 +98,18 @@ struct GoalView: View {
             }
             .padding()
             
-//            Button(action: {
-//                vm.updateUserDefaults()
-//            }, label: {
-//                Text("Salvar")
-//            }).disabled(!vm.isValid)
+            Button(action: {
+                vm.updateUserDefaults()
+            }, label: {
+                Text("Salvar")
+            }).disabled(!vm.isValid)
             
             Divider()
             
             if (vm.getImc() == -1) {
                 Text("Insira todos os dados corretamente.")
             } else {
-                Text("Seu IMC é de \(String(format: "%0.1f", vm.getImc())) kg/m2 (\(vm.getHealthStatus())). \(vm.getIdealWeightRangeText())")
+                Text("Seu IMC é de \(String(format: "%0.1f", vm.getImc())) kg/m2 (\(vm.getHealthStatus())). \(vm.getIdealWeightRangeText()) \n\nSeu gasto calórico diário é de aproximadamente \(String(format: "%0.1f", vm.getTotalCalories())) kcal.")
             }
             
             Spacer()
