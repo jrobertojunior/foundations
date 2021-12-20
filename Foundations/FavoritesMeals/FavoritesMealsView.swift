@@ -45,24 +45,24 @@ struct FavoritesMealsView: View {
                 Button(action: {
                     favoritesMealsViewModel.changeIngredientsSelection(selection: true)
                 }, label: {
-                    Text(" Select all ")
+                    Text("   Marcar todos   ")
                         .foregroundColor(.white)
                         .bold()
                         .padding()
                         .background(Color(.systemBlue))
                         .cornerRadius(10)
-                }).frame(maxWidth: .infinity)
+                }).frame(minWidth: 150, maxWidth: .infinity)
                 
                 Button(action: {
                     favoritesMealsViewModel.changeIngredientsSelection(selection: false)
                 }, label: {
-                    Text("Deselect all")
+                    Text("Desmarcar todos")
                         .foregroundColor(.white)
                         .bold()
                         .padding()
                         .background(Color(.systemBlue))
                         .cornerRadius(10)
-                }).frame(maxWidth: .infinity)
+                }).frame(minWidth: 150, maxWidth: .infinity)
             }
                 
         }.navigationTitle("Ingredientes favoritos")
