@@ -10,11 +10,21 @@ import SwiftUI
 struct MenuView: View {
     @ObservedObject var menuViewModel = MenuViewModel()
     @State var selectedMealId = -1
+    @State private var firstLaunch: Bool
+    
+    init () {
+        if UserDefaults.standard.bool(forKey: "alreadyLaunched") {
+            firstLaunch = false
+        } else {
+            UserDefaults.standard.set(true, forKey: "alreadyLaunched")
+            firstLaunch = true
+        }
+    }
     
     var body: some View {
         NavigationView {
             VStack{
-                
+                NavigationLink (destination: GoalView(), isActive: $firstLaunch) { }
                 VStack(alignment: .leading){
                     Text("Cafe da manha")
                     ScrollView(.horizontal, showsIndicators: false){
